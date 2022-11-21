@@ -13,4 +13,16 @@ class adminController extends Controller
     {
         return view('admin.login');
     }
+    public function dataSiswa()
+    {
+        return view('admin.dataSiswa');
+    }
+    public function dataLaporan()
+    {
+        return view('admin.dataLaporan');
+    }
+    public function detailLaporan()
+    {
+        return view('admin.detailLaporan');
+    }
 }

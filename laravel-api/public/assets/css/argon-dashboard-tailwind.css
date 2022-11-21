@@ -4410,3 +4410,13 @@ h6 {
     opacity: 0.65;
   }
 }
+
+/* .btn {
+    @apply font-medium py-1 px-2 rounded;
+}
+.btn-red {
+  @apply bg-red-500 text-white;
+}
+.btn-red:hover {
+  @apply bg-red-50;
+} */
