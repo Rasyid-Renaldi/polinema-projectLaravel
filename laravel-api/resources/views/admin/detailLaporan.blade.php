@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
     <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
-    <title>Dashboard Admin</title>
+    <title>Detail Laporan</title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <!-- Font Awesome Icons -->
@@ -119,92 +119,40 @@
                 <div class="flex-none w-full max-w-full px-3">
                     <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
                         <div class="p-6 pb-0 mb-0 border-b-0 border-b-solid rounded-t-2xl border-b-transparent">
-                            <!-- <h6 class="dark:text-white">Data Siswa</h6> -->
-                            <!-- breadcrumb -->
                             <ol class="flex flex-wrap pt-1 mr-12 bg-transparent rounded-lg sm:mr-16">
                                 <li class="text-sm leading-normal">
                                     <a class="text-black opacity-50" href="javascript:;">Pages</a>
                                 </li>
-                                <li class="text-sm pl-2 capitalize leading-normal text-black before:float-left before:pr-2 before:text-black before:content-['/']" aria-current="page">Detail Laporan</li>
+                                <!-- <li class="text-sm pl-2 capitalize leading-normal text-black before:float-left before:pr-2 before:text-black before:content-['/']">Detail Laporan</li> -->
+                                <li class="text-sm leading-normal ml-1">
+                                    <a class="text-black opacity-20" href="/dataLaporan"> / Data Laporan</a>
+                                </li>
                             </ol>
                             <h6 class="mb-0 font-bold text-black opacity-20 capitalize">Detail Laporan</h6>
-                        </div>
-                        <div class="flex-auto px-0 pt-0 pb-2">
-                            <div class="p-0 overflow-x-auto">
-                                <table class="items-center w-full mb-0 align-top border-collapse dark:border-white/40 text-slate-500">
-                                    <thead class="align-bottom">
-                                        <tr>
-                                            <th class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Nama Siswa</th>
-                                            <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Tanggal Laporan</th>
-                                            <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Jenis Laporan</th>
-                                            <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Status</th>
-                                            <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Aksi</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <div class="flex px-2 py-1">
-                                                    <div>
-                                                        <img src="../assets/img/bibrieziq.jpg" class="inline-flex items-center justify-center mr-4 text-sm text-white transition-all duration-200 ease-in-out h-9 w-9 rounded-xl" alt="user1" />
-                                                    </div>
-                                                    <div class="flex flex-col justify-center">
-                                                        <h6 class="mb-0 text-sm leading-normal dark:text-white">Habib Rieziq Syihab</h6>
-                                                        <p class="mb-0 text-xs leading-tight dark:text-white dark:opacity-80 text-slate-400">john@creative-tim.com</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <p class="mb-0 text-xs font-semibold leading-tight dark:text-white dark:opacity-80">22/07/2022</p>
-                                            </td>
-                                            <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <p class="mb-0 text-xs font-semibold leading-tight dark:text-white dark:opacity-80">Laporan Bug Pada Fitur</p>
-                                            </td>
-                                            <td class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <span class="bg-gradient-to-tl from-emerald-500 to-teal-400 px-2.5 text-xs rounded-1.8 py-1.4 inline-block whitespace-nowrap text-center align-baseline font-bold uppercase leading-none text-white">Terselesaikan</span>
-                                            </td>
-                                            <!-- <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                                                    Button
-                                                </button>
-                                            </td> -->
-                                            <td class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <a href="#" class="bg-red-500 hover:bg-red-200 text-white font-bold py-1 px-2 rounded">
-                                                    Detail
-                                                </a>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <div class="flex px-2 py-1">
-                                                    <div>
-                                                        <img src="../assets/img/team-3.jpg" class="inline-flex items-center justify-center mr-4 text-sm text-white transition-all duration-200 ease-in-out h-9 w-9 rounded-xl" alt="user2" />
-                                                    </div>
-                                                    <div class="flex flex-col justify-center">
-                                                        <h6 class="mb-0 text-sm leading-normal dark:text-white">Alexa Liras</h6>
-                                                        <p class="mb-0 text-xs leading-tight dark:text-white dark:opacity-80 text-slate-400">alexa@creative-tim.com</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <p class="mb-0 text-xs font-semibold leading-tight dark:text-white dark:opacity-80">22/07/2022</p>
-                                            </td>
-                                            <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <p class="mb-0 text-xs font-semibold leading-tight dark:text-white dark:opacity-80">Laporan bug fitur</p>
-                                            </td>
-                                            <td class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <span class="bg-gradient-to-tl from-slate-600 to-slate-300 px-2.5 text-xs rounded-1.8 py-1.4 inline-block whitespace-nowrap text-center align-baseline font-bold uppercase leading-none text-white">Belum Terselesaikan</span>
-                                            </td>
-                                            <td class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <a href="#" class="bg-red-500 hover:bg-red-200 text-white font-bold py-1 px-2 rounded">
-                                                    Detail
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="mb-6">
+                                <h6 class="mb-0 pt-6 font-bold text-black opacity-20 capitalize">Nama</h6>
+                                <p class="text-sm font-normal text-black opacity-5">Muhammad Khoirul Wahyudin</p>
+                                <h6 class="mb-0 pt-1 font-bold text-black opacity-20 capitalize">Tanggal Laporan</h6>
+                                <p class="text-sm font-normal text-black opacity-5">22/08/2020</p>
+                                <h6 class="mb-0 pt-1 font-bold text-black opacity-20 capitalize">Jenis Laporan</h6>
+                                <p class="text-sm font-normal text-black opacity-5">Laporan bug pada fitur UTBK</p>
+                                <h6 class="mb-0 pt-1 font-bold text-black opacity-20 capitalize">Deskripsi Laporan</h6>
+                                <p class="text-sm font-normal text-black opacity-5">Mohon maaf admin, pada fitur UTBK terjadi bug error tidak dapat memilih pilihan ganda
+                                    mohon untuk diperbaiki fiturnya lagi ya.</p>
+                                <h6 class="mb-0 pt-1 font-bold text-black opacity-20 capitalize">Screenshoot</h6>
+                                <img src="./assets/img/fotomanager.png" class="inline h-full max-w-full transition-all duration-200 dark:hidden ease-nav-brand" />
+                                <!-- <h6 class="mb-0 pt-2 font-bold text-black opacity-20 capitalize">Feedback</h6> -->
+                                <form action="#" class="space-y-8">
+                                    <div class="sm:col-span-2 pt-4">
+                                        <label for="feedback" class="block mb-2 font-bold text-black opacity-20 dark:text-gray-400">Feedback</label>
+                                        <textarea id="feedback" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Masukkan Feedback ....  "></textarea>
+                                    </div>
+                                    <div class="pt-4">
+                                        <button type="submit" class="py-3 px-5 text-sm font-bold text-center text-white rounded-lg bg-red-500 sm:w-fit hover:bg-red-50 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Kirim Feedback</button>
+                                    </div>
+                                </form>
                             </div>
+
                         </div>
                     </div>
                 </div>

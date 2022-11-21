@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
     <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
-    <title>Dashboard Admin</title>
+    <title>Data Laporan</title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <!-- Font Awesome Icons -->
@@ -169,7 +169,7 @@
                                                 </button>
                                             </td> -->
                                             <td class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <a href="#" class="bg-red-500 hover:bg-red-200 text-white font-bold py-1 px-2 rounded">
+                                                <a href="/detail-laporan" class="bg-red-500 hover:bg-red-200 text-white font-bold py-1 px-2 rounded">
                                                     Detail
                                                 </a>
                                             </td>

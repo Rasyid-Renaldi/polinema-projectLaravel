@@ -23,5 +23,5 @@ Route::get('/datasiswa', [adminController::class, 'dataSiswa']);
 
 //routes support page
 Route::get('/dataLaporan', [adminController::class, 'dataLaporan']);
-Route::get('/detail', [adminController::class, 'detailLaporan']);
+Route::get('/detail-laporan', [adminController::class, 'detailLaporan']);
 
