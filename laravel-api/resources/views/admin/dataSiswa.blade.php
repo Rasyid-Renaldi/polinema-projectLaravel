@@ -25,7 +25,7 @@
     <div class="absolute w-full bg-red-500 dark:hidden min-h-75"></div>
     <!-- sidebar  -->
     <!-- sidenav  -->
-    <aside class="fixed inset-y-0 flex-wrap items-center justify-between block w-full p-0 my-4 overflow-y-auto antialiased transition-transform duration-200 -translate-x-full bg-primary    border-0 shadow-xl dark:shadow-none dark:bg-slate-850 max-w-64 ease-nav-brand z-990 xl:ml-6 rounded-2xl xl:left-0 xl:translate-x-0" aria-expanded="false">
+    <aside class="fixed inset-y-0 flex-wrap items-center justify-between block w-full p-0 my-4 overflow-y-auto antialiased transition-transform duration-200 -translate-x-full bg-primary border-0 shadow-xl dark:shadow-none dark:bg-slate-850 max-w-64 ease-nav-brand z-990 xl:ml-6 rounded-2xl xl:left-0 xl:translate-x-0" aria-expanded="false">
         <div class="h-19">
             <i class="absolute top-0 right-0 p-4 opacity-50 cursor-pointer fas fa-times dark:text-white text-slate-400 xl:hidden" sidenav-close></i>
             <a class="block px-8 py-6 m-0 text-sm whitespace-nowrap dark:text-white text-white" href="https://demos.creative-tim.com/argon-dashboard-tailwind/pages/dashboard.html" target="_blank">
@@ -40,7 +40,7 @@
         <div class="items-center block w-auto max-h-screen overflow-auto h-sidenav grow basis-full">
             <ul class="flex flex-col pl-0 mb-0">
                 <li class="mt-0.5 w-full">
-                    <a class="text-white font-medium py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="./pages/tables.html">
+                    <a class="text-white font-medium py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="/admin">
                         <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
                             <i class="relative top-0 text-sm leading-normal text-white ni ni-tv-2"></i>
                         </div>
@@ -49,7 +49,7 @@
                 </li>
 
                 <li class="mt-0.5 w-full">
-                    <a class="py-2.7 dark:text-white dark:opacity-80 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap rounded-lg px-4 font-semibold text-white transition-colors" href="./pages/dashboard.html">
+                    <a class="py-2.7 dark:text-white dark:opacity-80 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap rounded-lg px-4 font-semibold text-white transition-colors" href="/forumadmin">
                         <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
                             <i class="relative top-0 text-sm leading-normal text-white ni ni-world-2"></i>
                         </div>
@@ -58,42 +58,21 @@
                 </li>
 
                 <li class="mt-0.5 w-full">
-                    <a class="py-2.7 bg-blue-500/13 text-white font-medium text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="./pages/rtl.html">
+                    <a class=" text-white font-medium py-2.7 bg-blue-500/13 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="/datasiswa">
                         <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
                             <i class="relative top-0 text-sm leading-normal text-white ni ni-world-2"></i>
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Data Siswa</span>
                     </a>
                 </li>
-                <li class="mt-0.5 w-full">
-                    <a class=" text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="./pages/virtual-reality.html">
-                        <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                            <i class="relative top-0 text-sm leading-normal text-white ni ni-app"></i>
-                        </div>
-                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Data Pertanyaan</span>
-                    </a>
-                </li>
-                <li class="mt-0.5 w-full">
-                    <a class=" text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="./pages/rtl.html">
-                        <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                            <i class="relative top-0 text-sm leading-normal text-white ni ni-world-2"></i>
-                        </div>
-                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Data Jawaban</span>
-                    </a>
-                </li>
+
+
                 <li class="w-full mt-4">
                     <h6 class="pl-6 ml-2 text-xs font-bold leading-tight uppercase text-white">Support pages</h6>
                 </li>
+                
                 <li class="mt-0.5 w-full">
-                    <a class=" text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="./pages/profile.html">
-                        <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                            <i class="relative top-0 text-sm leading-normal text-white ni ni-tv-2"></i>
-                        </div>
-                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Dashboard Support</span>
-                    </a>
-                </li>
-                <li class="mt-0.5 w-full">
-                    <a class="py-2.7 text-white dark:opacity-80  text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="./pages/rtl.html">
+                    <a class=" text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="/dataLaporan">
                         <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
                             <i class="relative top-0 text-sm leading-normal text-white ni ni-world-2"></i>
                         </div>
@@ -118,7 +97,7 @@
                 <div class="flex-none w-full max-w-full px-3">
                     <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
                         <div class="p-6 pb-0 mb-0 border-b-0 border-b-solid rounded-t-2xl border-b-transparent">
-                            <!-- <h6 class="dark:text-white">Data Siswa</h6> -->
+
                             <!-- breadcrumb -->
                             <ol class="flex flex-wrap pt-1 mr-12 bg-transparent rounded-lg sm:mr-16">
                                 <li class="text-sm leading-normal">
@@ -137,7 +116,6 @@
                                             <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Forum</th>
                                             <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Status</th>
                                             <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Employed</th>
-                                            <th class="px-6 py-3 font-semibold capitalize align-middle bg-transparent border-b border-collapse border-solid shadow-none dark:border-white/40 dark:text-white tracking-none whitespace-nowrap text-slate-400 opacity-70"></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -164,7 +142,8 @@
                                                 <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">23/04/18</span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <a href="javascript:;" class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400"> Edit </a>
+                                                <a href="javascript:;" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
+                                                <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -190,7 +169,8 @@
                                                 <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">11/01/19</span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <a href="javascript:;" class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400"> Edit </a>
+                                                <a href="javascript:;" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
+                                                <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -216,7 +196,8 @@
                                                 <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">19/09/17</span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <a href="javascript:;" class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400"> Edit </a>
+                                                <a href="javascript:;" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
+                                                <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -242,7 +223,8 @@
                                                 <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">24/12/08</span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <a href="javascript:;" class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400"> Edit </a>
+                                                <a href="javascript:;" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
+                                                <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -268,7 +250,8 @@
                                                 <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">04/10/21</span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <a href="javascript:;" class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400"> Edit </a>
+                                                <a href="javascript:;" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
+                                                <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -294,7 +277,8 @@
                                                 <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">14/09/20</span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b-0 whitespace-nowrap shadow-transparent">
-                                                <a href="javascript:;" class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400"> Edit </a>
+                                                <a href="javascript:;" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
+                                                <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a>
                                             </td>
                                         </tr>
                                     </tbody>
