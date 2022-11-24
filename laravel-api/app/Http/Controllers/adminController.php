@@ -41,4 +41,5 @@ class adminController extends Controller
     {
         return view('admin.detailTanya');
     }
+    
 }
