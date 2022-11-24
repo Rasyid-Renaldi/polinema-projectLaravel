@@ -6,7 +6,18 @@ module.exports = {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      space: {
+        '5px': '5px',
+      },
+      colors: {
+        primary: '#E36559',
+        secondary: '#000000',
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ],
 }

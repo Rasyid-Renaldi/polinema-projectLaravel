@@ -25,4 +25,20 @@ class adminController extends Controller
     {
         return view('admin.detailLaporan');
     }
+    public function forum()
+    {
+        return view('admin.forum');
+    }
+    public function coba()
+    {
+        return view('admin.coba');
+    }
+    public function adminTanya()
+    {
+        return view('admin.adminTanya');
+    }
+    public function detailTanya()
+    {
+        return view('admin.detailTanya');
+    }
 }
