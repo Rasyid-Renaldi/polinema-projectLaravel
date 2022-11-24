@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\adminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', [adminController::class, 'login']);
+Route::get('/admin', [adminController::class, 'index']);
+Route::get('/datasiswa', [adminController::class, 'dataSiswa']);
+
+//forum routes
+Route::get('/forumadmin', [adminController::class, 'forum']);
+Route::get('/coba', [adminController::class, 'coba']);
+Route::get('/admintanya', [adminController::class, 'adminTanya']);
+Route::get('/detailtanya', [adminController::class, 'detailTanya']);
+
+//routes support page
+Route::get('/dataLaporan', [adminController::class, 'dataLaporan']);
+Route::get('/detail-laporan', [adminController::class, 'detailLaporan']);
+
+
