@@ -115,7 +115,7 @@
                                             <th class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Nama Siswa</th>
                                             <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Forum</th>
                                             <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Status</th>
-                                            <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Employed</th>
+                                            <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Tanggal Masuk</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -142,7 +142,7 @@
                                                 <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">23/04/18</span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <a href="javascript:;" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
+                                                <a href="/editsiswa" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
                                                 <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a>
                                             </td>
                                         </tr>

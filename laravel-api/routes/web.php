@@ -30,6 +30,10 @@ Route::get('/coba', [adminController::class, 'coba']);
 Route::get('/admintanya', [adminController::class, 'adminTanya']);
 Route::get('/detailtanya', [adminController::class, 'detailTanya']);
 
+//CRUD
+Route::get('/editsiswa', [adminController::class, 'editSiswa']);
+Route::get('/popup', [adminController::class, 'popupTest']);
+
 //routes support page
 Route::get('/dataLaporan', [adminController::class, 'dataLaporan']);
 Route::get('/detail-laporan', [adminController::class, 'detailLaporan']);

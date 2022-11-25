@@ -70,7 +70,7 @@
                 <li class="w-full mt-4">
                     <h6 class="pl-6 ml-2 text-xs font-bold leading-tight uppercase text-white">Support pages</h6>
                 </li>
-                
+
                 <li class="mt-0.5 w-full">
                     <a class=" text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="/dataLaporan">
                         <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
@@ -197,18 +197,66 @@
                     </div>
                 </div>
 
+                <!-- card support -->
+                <div class="w-full max-w-full px-3 sm:w-1/2 sm:flex-none xl:w-1/4 mt-5">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
+                        <div class="flex-auto p-4">
+                            <div class="flex flex-row -mx-3">
+                                <div class="flex-none w-2/3 max-w-full px-3">
+                                    <div>
+                                        <p class="mb-0 font-sans text-sm font-semibold leading-normal uppercase text-gray-500">Laporan Baru Masuk</p>
+                                        <h5 class="mb-2 font-bold text-black opacity-80">2000</h5>
+                                        <p class="mb-0 text-black opacity-60">
+                                            <span class="text-sm font-bold leading-normal text-emerald-500">+55%</span>
+                                            since yesterday
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="px-3 text-right basis-1/3">
+                                    <div class="inline-block w-12 h-12 text-center rounded-circle bg-gradient-to-tl from-orange-500 to-yellow-500">
+                                        <i class="ni leading-none ni-cart text-lg relative top-3.5 text-white"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full max-w-full px-3 sm:w-1/2 sm:flex-none xl:w-1/4 mt-5">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
+                        <div class="flex-auto p-4">
+                            <div class="flex flex-row -mx-3">
+                                <div class="flex-none w-2/3 max-w-full px-3">
+                                    <div>
+                                        <p class="mb-0 font-sans text-sm font-semibold leading-normal uppercase text-gray-500">Total Laporan</p>
+                                        <h5 class="mb-2 font-bold text-black opacity-80">2000</h5>
+                                        <p class="mb-0 text-black opacity-60">
+                                            <span class="text-sm font-bold leading-normal text-emerald-500">+55%</span>
+                                            since yesterday
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="px-3 text-right basis-1/3">
+                                    <div class="inline-block w-12 h-12 text-center rounded-circle bg-gradient-to-tl from-orange-500 to-yellow-500">
+                                        <i class="ni leading-none ni-cart text-lg relative top-3.5 text-white"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+            <!-- card baru -->
 
 
             <!-- cards row 3 -->
 
-            <div class="flex flex-wrap mt-6 -mx-3">
+            <!-- <div class="flex flex-wrap mt-6 -mx-3">
                 <div class="w-full max-w-full px-3 mt-0 mb-6 lg:mb-0 lg:w-7/12 lg:flex-none">
                     <div class="relative flex flex-col min-w-0 break-words bg-white border-0 border-solid shadow-xl dark:bg-slate-850 dark:shadow-dark-xl dark:bg-gray-950 border-black-125 rounded-2xl bg-clip-border">
                         <div class="p-4 pb-0 mb-0 rounded-t-4">
                             <div class="flex justify-between">
-                                <h6 class="mb-2 text-semibold text-black">Sales by Country</h6>
+                                <h6 class="mb-2 text-semibold text-black">Data Laporan Masuk</h6>
                             </div>
                         </div>
                         <div class="overflow-x-auto">
@@ -410,7 +458,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- end cards -->
     </main>

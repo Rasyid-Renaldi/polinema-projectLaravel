@@ -41,5 +41,13 @@ class adminController extends Controller
     {
         return view('admin.detailTanya');
     }
+    public function editSiswa()
+    {
+        return view('admin.editSiswa');
+    }
+    public function popupTest()
+    {
+        return view('admin.popupTest');
+    }
     
 }

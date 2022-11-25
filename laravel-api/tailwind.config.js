@@ -4,6 +4,7 @@ module.exports = {
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./resources/**/*.vue",
+
   ],
   theme: {
     container: {
@@ -20,5 +21,6 @@ module.exports = {
   screens: {
     '2x1' : '1320px'
   },
-  plugins: [],
+  plugins: [
+  ],
 }
