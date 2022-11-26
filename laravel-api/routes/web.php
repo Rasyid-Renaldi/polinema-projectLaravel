@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', [adminController::class, 'login']);
+Route::get('/', [adminController::class, 'index']);
 Route::get('/admin', [adminController::class, 'index']);
 Route::get('/datasiswa', [adminController::class, 'dataSiswa']);
 
@@ -37,5 +37,3 @@ Route::get('/popup', [adminController::class, 'popupTest']);
 //routes support page
 Route::get('/dataLaporan', [adminController::class, 'dataLaporan']);
 Route::get('/detail-laporan', [adminController::class, 'detailLaporan']);
-
-
