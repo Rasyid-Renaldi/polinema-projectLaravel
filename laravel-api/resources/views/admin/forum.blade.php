@@ -148,6 +148,8 @@
                                                 </div>
                                             </div>
                                         </div>
+
+                                        {{--? Memunculkan kolom diskusi dari database server --}}
                                         <p class="font-normal text-sm text-gray-700">halo teman teman minta pendapat aku lagi ngerjain tugas ini,
                                             enaknya dikerjakan pake bahasa pemrograman apa ya
                                         </p>
@@ -163,6 +165,8 @@
                                         </div>
                                     </div>
                                 </div>
+                                {{--? sampek sini batesnya  --}} 
+                                {{--! coba... --}}
 
                                 <div class="block w-full p-6 mt-4 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 dark:bg-gray-800 ">
                                     <div class="py-2 mt-2">
