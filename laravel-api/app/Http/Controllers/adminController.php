@@ -49,5 +49,8 @@ class adminController extends Controller
     {
         return view('admin.popupTest');
     }
-    
+    public function editPostingan()
+    {
+        return view('admin.editPostingan');
+    }
 }

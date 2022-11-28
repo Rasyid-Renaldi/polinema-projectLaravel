@@ -74,7 +74,7 @@
                 <li class="w-full mt-4">
                     <h6 class="pl-6 ml-2 text-xs font-bold leading-tight uppercase text-white">Support pages</h6>
                 </li>
-                
+
                 <li class="mt-0.5 w-full">
                     <a class=" text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="/dataLaporan">
                         <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
@@ -138,10 +138,12 @@
                                                     <div id="dropdownDots" class="hidden z-10 w-35 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
                                                         <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
                                                             <li>
-                                                                <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Hapus Postingan</a>
+                                                                <button class="bg-transparant text-black opacity-80 active:bg-red-300 font-medium text-sm px-4 py-2 rounded hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear text-left transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
+                                                                    Hapus Postingan
+                                                                </button>
                                                             </li>
                                                             <li>
-                                                                <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Edit</a>
+                                                                <a href="/editpostingan" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Edit</a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -165,15 +167,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                {{--? sampek sini batesnya  --}} 
+                                {{--? sampek sini batesnya  --}}
                                 {{--! coba... --}}
-
                                 <div class="block w-full p-6 mt-4 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 dark:bg-gray-800 ">
                                     <div class="py-2 mt-2">
                                         <img class="-mt-3" width="35" height="35" src="./assets/img/avatar-new/rokigarong.svg"></a>
                                         <div class="ml-12 justify-between -mt-10">
                                             <h5 class="mb-2 mt-1 text-lg font-bold tracking-tight text-gray-600">
-                                                <a href="/detailtanya" class="text-gray-600">Roki Garong</a>
+                                                <a href="/detailtanya" class="text-gray-600">Muhammad Ali Al-Malangiy</a>
                                             </h5>
                                             <h1 class="font-medium text-sm md:text-1xl lg:text-2xl -mt-2 text-left md:text-left space-x-10 opacity-50">2 Menit Yang Lalu</h1>
                                             <div class="flex ml-12 justify-right">
@@ -186,16 +187,20 @@
                                                     <div id="dropdownDots" class="hidden z-10 w-35 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
                                                         <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
                                                             <li>
-                                                                <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Hapus Postingan</a>
+                                                                <button class="bg-transparant text-black opacity-80 active:bg-red-300 font-medium text-sm px-4 py-2 rounded hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear text-left transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
+                                                                    Hapus Postingan
+                                                                </button>
                                                             </li>
                                                             <li>
-                                                                <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Edit</a>
+                                                                <a href="/editpostingan" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Edit</a>
                                                             </li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+
+                                        {{--? Memunculkan kolom diskusi dari database server --}}
                                         <p class="font-normal text-sm text-gray-700">halo teman teman minta pendapat aku lagi ngerjain tugas ini,
                                             enaknya dikerjakan pake bahasa pemrograman apa ya
                                         </p>
@@ -211,18 +216,58 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- end card -->
-
-
-
-
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
+
             <!-- endtable -->
         </div>
+
     </main>
+    <!-- pop up hapus postingan -->
+    <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-id">
+        <div class="relative w-auto my-6 mx-auto max-w-3xl">
+            <!--content-->
+            <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                <!--header-->
+                <div class="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                    <h3 class="text-3xl font-semibold">
+                        Peringatan
+                    </h3>
+                    <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal('modal-id')">
+                        <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                            ×
+                        </span>
+                    </button>
+                </div>
+                <!--body-->
+                <div class="relative p-6 flex-auto">
+                    <p class="my-4 text-slate-500 text-lg leading-relaxed">
+                        Apakah anda yakin ingin menghapus?
+                    </p>
+                </div>
+                <!--footer-->
+                <div class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+                    <button class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
+                        Tidak
+                    </button>
+                    <button class="bg-red-500 text-white active:bg-red-300 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
+                        Hapus Postingan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden opacity-50 fixed inset-0 z-40 bg-black" id="modal-id-backdrop"></div>
+    <script type="text/javascript">
+        function toggleModal(modalID) {
+            document.getElementById(modalID).classList.toggle("hidden");
+            document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
+            document.getElementById(modalID).classList.toggle("flex");
+            document.getElementById(modalID + "-backdrop").classList.toggle("flex");
+        }
+    </script>
+    <!-- end pop up -->
 </body>

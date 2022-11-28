@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\adminController;
-use App\Http\Controllers\EnduseController;
+use App\Http\Controllers\EnduserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,12 +23,11 @@ Route::get('/admin', [adminController::class, 'index']);
 Route::get('/datasiswa', [adminController::class, 'dataSiswa']);
 
 //forum routes
-Route::get('/forum', [EnduseController::class, 'forumUser']);
+Route::get('/forum', [EnduserController::class, 'forumUser']);
 Route::get('/coba', [adminController::class, 'coba']);
-Route::get('/forumadmin', [adminController::class, 'forum']);
+
 Route::get('/coba', [adminController::class, 'coba']);
-Route::get('/admintanya', [adminController::class, 'adminTanya']);
-Route::get('/detailtanya', [adminController::class, 'detailTanya']);
+
 
 //CRUD
 Route::get('/editsiswa', [adminController::class, 'editSiswa']);
@@ -37,3 +36,9 @@ Route::get('/popup', [adminController::class, 'popupTest']);
 //routes support page
 Route::get('/dataLaporan', [adminController::class, 'dataLaporan']);
 Route::get('/detail-laporan', [adminController::class, 'detailLaporan']);
+
+//forumAdmin routes
+Route::get('/forumadmin', [adminController::class, 'forum']);
+Route::get('/admintanya', [adminController::class, 'adminTanya']);
+Route::get('/detailtanya', [adminController::class, 'detailTanya']);
+Route::get('/editpostingan', [adminController::class, 'editPostingan']);
