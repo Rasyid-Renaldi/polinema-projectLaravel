@@ -53,4 +53,8 @@ class adminController extends Controller
     {
         return view('admin.editPostingan');
     }
+    public function dashboardNew()
+    {
+        return view('admin.dashboardNew');
+    }
 }
