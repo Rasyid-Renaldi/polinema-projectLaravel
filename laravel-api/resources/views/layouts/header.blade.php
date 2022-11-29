@@ -32,16 +32,11 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="flex items-center px-4">
-                            <a href="javascript:;" class="p-0 text-sm text-primary transition-all ease-nav-brand">
-                                <i fixed-plugin-button-nav class="cursor-pointer fa fa-cog"></i>
-                                <!-- fixed-plugin-button-nav  -->
-                            </a>
-                        </li>
+
 
                         <!-- notifications -->
 
-                        <li class="relative flex items-center pr-2">
+                        <li class="relative flex items-center pl-4 pr-2">
                             <p class="hidden transform-dropdown-show"></p>
                             <a href="javascript:;" class="block p-0 text-sm text-primary transition-all ease-nav-brand" dropdown-trigger aria-expanded="false">
                                 <i class="cursor-pointer fa fa-bell"></i>
@@ -56,7 +51,7 @@
                                                 <img src="./assets/img/team-2.jpg" class="inline-flex items-center justify-center mr-4 text-sm text-white h-9 w-9 max-w-none rounded-xl" />
                                             </div>
                                             <div class="flex flex-col justify-center">
-                                                <h6 class="mb-1 text-sm font-normal leading-normal dark:text-white"><span class="font-semibold">New message</span> from Laur</h6>
+                                                <h6 class="mb-1 text-sm font-normal leading-normal text-black opacity-60"><span class="font-semibold">New message</span> from Laur</h6>
                                                 <p class="mb-0 text-xs leading-tight text-slate-400 dark:text-white/80">
                                                     <i class="mr-1 fa fa-clock"></i>
                                                     13 minutes ago
@@ -73,7 +68,7 @@
                                                 <img src="./assets/img/small-logos/logo-spotify.svg" class="inline-flex items-center justify-center mr-4 text-sm text-white bg-gradient-to-tl from-zinc-800 to-zinc-700 dark:bg-gradient-to-tl dark:from-slate-750 dark:to-gray-850 h-9 w-9 max-w-none rounded-xl" />
                                             </div>
                                             <div class="flex flex-col justify-center">
-                                                <h6 class="mb-1 text-sm font-normal leading-normal dark:text-white"><span class="font-semibold">New album</span> by Travis Scott</h6>
+                                                <h6 class="mb-1 text-sm font-normal leading-normal text-black opacity-60"><span class="font-semibold">New album</span> by Travis Scott</h6>
                                                 <p class="mb-0 text-xs leading-tight text-slate-400 dark:text-white/80">
                                                     <i class="mr-1 fa fa-clock"></i>
                                                     1 day
@@ -102,7 +97,7 @@
                                                 </svg>
                                             </div>
                                             <div class="flex flex-col justify-center">
-                                                <h6 class="mb-1 text-sm font-normal leading-normal dark:text-white">Payment successfully completed</h6>
+                                                <h6 class="mb-1 text-sm font-normal leading-normal text-black opacity-60">Payment successfully completed</h6>
                                                 <p class="mb-0 text-xs leading-tight text-slate-400 dark:text-white/80">
                                                     <i class="mr-1 fa fa-clock"></i>
                                                     2 days

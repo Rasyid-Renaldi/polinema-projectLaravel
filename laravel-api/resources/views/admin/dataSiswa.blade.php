@@ -70,7 +70,7 @@
                 <li class="w-full mt-4">
                     <h6 class="pl-6 ml-2 text-xs font-bold leading-tight uppercase text-white">Support pages</h6>
                 </li>
-                
+
                 <li class="mt-0.5 w-full">
                     <a class=" text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="/dataLaporan">
                         <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
@@ -292,3 +292,9 @@
         </div>
     </main>
 </body>
+<!-- plugin for charts  -->
+<script src="./assets/js/plugins/chartjs.min.js" async></script>
+<!-- plugin for scrollbar  -->
+<script src="./assets/js/plugins/perfect-scrollbar.min.js" async></script>
+<!-- main script file  -->
+<script src="./assets/js/argon-dashboard-tailwind.js?v=1.0.1" async></script>
