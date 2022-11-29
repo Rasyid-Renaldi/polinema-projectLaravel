@@ -149,15 +149,15 @@
                     </a>
                     <p class="px-2 py-2">Ahmad Nur Fauzi</p>
                 </div>
-                <div class="px-4 mt-2 flex flex-row">
-                    <img class="mb-2 p-1 w-10 h-10 rounded-full ring-2 ring-green-600 hover:ring-transparent delay-100" width="42" height="42"
+                <div class="px-4 mt-2 flex flex-wrap">
+                    <img class="mb-2 p-1 w-10 h-10 rounded-full ring-2  ring-green-600 hover: delay-100" width="42" height="42"
                         src="https://mejakita.com/assets/images/profile_default.png"></a>
-                    <p class="px-2 py-2">Koci</p>
+                    <p class="px-2 py-2">Siswa Online</p>
                 </div>
-                <div class="px-4 mt-2 flex flex-row">
-                    <img class="mb-2 p-1 w-10 h-10 rounded-full ring-2 ring-slate-500 hover:ring-transparent delay-100" width="42" height="42"
+                <div class="px-4 mt-2 flex flex-wrap opacity-20 hover:opacity-100">
+                    <img class="mb-2 p-1 w-10 h-10 rounded-full ring-2 ring-slate-500" width="42" height="42"
                         src="https://mejakita.com/assets/images/profile_default.png"></a>
-                    <p class="px-2 py-2">Koci</p>
+                    <p class="px-2 py-2">Siswa Offline</p>
                 </div>
             </div>
         </div>
