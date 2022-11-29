@@ -144,12 +144,18 @@
                     Siswa Online
                 </div>
                 <div class="px-4 mt-2 flex flex-row">
-                    <img class="-mb-6 p-1 w-10 h-10 rounded-full ring-2 ring-green-600" width="42" height="42"
-                        src="./assets/img/avatar-new/rokigarong.svg"></a>
+                    <img class="mb-2 p-1 w-10 h-10 rounded-full ring-2 ring-green-600" width="42" height="42"
+                        src="./assets/img/avatar-new/rokigarong.svg">
+                    </a>
                     <p class="px-2 py-2">Ahmad Nur Fauzi</p>
                 </div>
                 <div class="px-4 mt-2 flex flex-row">
-                    <img class="-mb-6 p-1 w-10 h-10 rounded-full ring-2 ring-green-600" width="42" height="42"
+                    <img class="mb-2 p-1 w-10 h-10 rounded-full ring-2 ring-green-600 hover:ring-transparent delay-100" width="42" height="42"
+                        src="https://mejakita.com/assets/images/profile_default.png"></a>
+                    <p class="px-2 py-2">Koci</p>
+                </div>
+                <div class="px-4 mt-2 flex flex-row">
+                    <img class="mb-2 p-1 w-10 h-10 rounded-full ring-2 ring-slate-500 hover:ring-transparent delay-100" width="42" height="42"
                         src="https://mejakita.com/assets/images/profile_default.png"></a>
                     <p class="px-2 py-2">Koci</p>
                 </div>
