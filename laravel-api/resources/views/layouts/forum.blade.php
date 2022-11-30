@@ -78,14 +78,14 @@
                     <span class="px-2">Halaman</span>
                 </div>
             </div>
-            <div class="flex-grow h-screen flex flex-col items-center bg-slate-200">
+
+            {{--  Section Middle Start  --}}
+            <div class="flex-grow flex flex-col items-center bg-slate-200">
                 <div class="shadow-sm bg-white my-3 mx-6 w-3/5 h-16 rounded-md flex items-center">
                     <div class="m-3 bg-blue-100 rounded-full">
                         <img src="https://cdn-icons-png.flaticon.com/128/2956/2956214.png" width="25" height="25"
                             alt="">
                     </div>
-
-                    {{--  Section Middle Start  --}}
                     <div>
                         <h4 class="font-semibold">Create a Idea</h4>
                         <div class="text-sm text-gray-500">
@@ -93,7 +93,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="shadow-md bg-white m-6 w-3/5 rounded-md">
+                <div class="shadow-md bg-white m-6 w-3/4 rounded-md">
                     <div class="flex items-center">
                         <div class="flex items-center w-full p-3">
                             <div class="m-3">
@@ -139,7 +139,8 @@
                                 </div>
                             </div>
                             <button class="ml-auto mr-8 hover:bg-slate-200 rounded-lg cursor-pointer">
-                                <img src="./assets/img/icons/svg/dot.svg" width="20" height="20" alt="">
+                                <img src="./assets/img/icons/svg/dot.svg" width="20" height="20"
+                                    alt="">
                             </button>
                         </div>
                         <div class="mt-2">
@@ -147,13 +148,14 @@
                                 Saya izin bertanya, apakah ini termasuk nilai X dan Y.
                             </div>
                         </div>
-                    </div>
-                    <div class="bg-red-100">
-                        <div class="">
-                            Ahmad Nur Fauzi
+                        <div class="bg-red-100 mt-2">
+                            <div class="">
+                                <img src="./assets/img/icons/svg/xdany.png" class="w-3/4" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
+                
 
                 {{--  Section End Middle  --}}
 
