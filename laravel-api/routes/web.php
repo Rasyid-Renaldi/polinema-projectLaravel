@@ -39,6 +39,8 @@ Route::get('/detail-laporan', [adminController::class, 'detailLaporan']);
 
 //forumAdmin routes
 Route::get('/forumadmin', [adminController::class, 'forum']);
+
+
 Route::get('/admintanya', [adminController::class, 'adminTanya']);
 Route::get('/detailtanya', [adminController::class, 'detailTanya']);
 Route::get('/editpostingan', [adminController::class, 'editPostingan']);
