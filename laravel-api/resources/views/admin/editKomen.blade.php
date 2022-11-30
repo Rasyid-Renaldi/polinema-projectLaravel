@@ -7,7 +7,7 @@
     @vite('resources/css/app.css')
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
     <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
-    <title>Edit Postingan - Administrator</title>
+    <title>Edit Komentar - Administrator</title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <!-- Font Awesome Icons -->
@@ -58,7 +58,7 @@
                 </li>
 
                 <li class="mt-0.5 w-full">
-                    <a class=" text-white font-medium py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="/datasiswa">
+                    <a class=" text-white font-medium py-2.7  text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="/datasiswa">
                         <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
                             <i class="relative top-0 text-sm leading-normal text-white ni ni-world-2"></i>
                         </div>
@@ -104,12 +104,12 @@
                                 </li>
                                 <li class="text-sm pl-2 capitalize leading-normal text-black before:float-left before:pr-2 before:text-black before:content-['/']" aria-current="page">Data Siswa</li>
                             </ol>
-                            <h6 class="mb-0 font-bold text-black capitalize">Edit Postingan</h6>
+                            <h6 class="mb-0 font-bold text-black capitalize">Edit Komentar</h6>
                             <div class="py-2 mt-7">
                                 <img class="-mt-3" width="35" height="35" src="./assets/img/avatar-new/rokigarong.svg"></a>
                                 <div class="ml-12 justify-between -mt-10">
                                     <h5 class="mb-2 mt-1 text-lg font-bold tracking-tight text-gray-600">
-                                        <a href="/detailtanya" class="text-gray-600">Nur Kamdi Albaron</a>
+                                        <a href="/detailtanya" class="text-gray-600">Habib Rieziq Syihab</a>
                                     </h5>
                                     <h1 class="font-medium text-sm md:text-1xl lg:text-2xl -mt-2 text-left md:text-left space-x-10 opacity-50">2 Menit Yang Lalu</h1>
                                     <!--start form Pertanyaan -->
