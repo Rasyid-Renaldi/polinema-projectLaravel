@@ -57,4 +57,8 @@ class adminController extends Controller
     {
         return view('admin.dashboardNew');
     }
+    public function editKomen()
+    {
+        return view('admin.editKomen');
+    }
 }

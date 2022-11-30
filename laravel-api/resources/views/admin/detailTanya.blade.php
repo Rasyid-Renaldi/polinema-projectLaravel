@@ -7,6 +7,7 @@
     <!-- import flowbite -->
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
     <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+    <script src="../path/to/flowbite/dist/flowbite.js"></script>
     <!-- import flowbite -->
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
     <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
@@ -159,27 +160,25 @@
                                             <img class="-mt-3" width="30" height="30" src="./assets/img/avatar-new/habib2.svg"></a>
                                             <div class="ml-12 justify-between -mt-9">
                                                 <h1 class="font-bold text-sm md:text-1xl lg:text-2xl text-left md:text-left space-x-10">Habib Muhammad Rieziq bin Syihab</h1>
-                                                <h1 class="font-medium text-xs md:text-1xl lg:text-2xl -mt-2 text-left md:text-left space-x-10 opacity-50">2 Menit Yang Lalu</h1>
+                                                <h1 class="font-medium text-xs md:text-1xl lg:text-2xl -mt-2 text-left md:text-left space-x-10 opacity-50">1 Menit Yang Lalu</h1>
                                                 <div class="mt- md:absolute -mt-10 md:mt right-0 -z-1 mr-20">
-                                                    <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
+                                                    <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDotss" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
                                                         <img width="20" height="20" src="./assets/img/newimages/sett.svg"></a>
                                                     </button>
                                                     <!-- Dropdown menu -->
-                                                    <div id="dropdownDots" class="hidden z-10 w-35 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
+                                                    <div id="dropdownDotss" class="hidden z-10 w-35 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
                                                         <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
                                                             <li>
                                                                 <button class="bg-transparant text-black opacity-80 active:bg-red-300 font-medium text-sm px-4 py-2 rounded hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear text-left transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
-                                                                    Hapus Postingan
+                                                                    Hapus Komentar
                                                                 </button>
                                                             </li>
                                                             <li>
-                                                                <a href="/editpostingan" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Edit</a>
+                                                                <a href="/editkomentar" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Edit</a>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <!-- modal pop up start -->
-
-                                                    <!-- end pop up start -->
+                                                    <!-- end dropdown menu -->
                                                 </div>
                                             </div>
                                             <p class="font-normal text-sm text-gray-700">Pertanyaan antum tidak nyambung.
