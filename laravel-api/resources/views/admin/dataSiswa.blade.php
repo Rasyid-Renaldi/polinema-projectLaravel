@@ -142,8 +142,21 @@
                                                 <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">23/04/18</span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <a href="/editsiswa" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
-                                                <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a>
+                                                <!-- <a href="/editsiswa" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
+                                                <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a> -->
+                                                <a href="#" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 ">
+                                                    <i class="fa fa-solid fa-comment top-3.5 text-white"></i>
+                                                    <span class="sr-only">Icon description</span>
+                                                </a>
+                                                <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                    <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
+                                                    <span class="sr-only">Icon description</span>
+                                                </a>
+                                                <a href="#" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                    <i class="fa fa-solid fa-trash top-3.5 text-white"></i>
+                                                    <span class="sr-only">Icon description</span>
+                                                </a>
+
                                             </td>
                                         </tr>
                                         <tr>
@@ -169,8 +182,20 @@
                                                 <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">11/01/19</span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <a href="javascript:;" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
-                                                <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a>
+                                                <!-- <a href="javascript:;" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
+                                                <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a> -->
+                                                <a href="#" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 ">
+                                                    <i class="fa fa-solid fa-comment top-3.5 text-white"></i>
+                                                    <span class="sr-only">Icon description</span>
+                                                </a>
+                                                <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                    <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
+                                                    <span class="sr-only">Icon description</span>
+                                                </a>
+                                                <a href="#" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                    <i class="fa fa-solid fa-trash top-3.5 text-white"></i>
+                                                    <span class="sr-only">Icon description</span>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -196,8 +221,20 @@
                                                 <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">19/09/17</span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <a href="javascript:;" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
-                                                <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a>
+                                                <!-- <a href="javascript:;" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
+                                                <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a> -->
+                                                <a href="#" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 ">
+                                                    <i class="fa fa-solid fa-comment top-3.5 text-white"></i>
+                                                    <span class="sr-only">Icon description</span>
+                                                </a>
+                                                <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                    <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
+                                                    <span class="sr-only">Icon description</span>
+                                                </a>
+                                                <a href="#" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                    <i class="fa fa-solid fa-trash top-3.5 text-white"></i>
+                                                    <span class="sr-only">Icon description</span>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -223,8 +260,20 @@
                                                 <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">24/12/08</span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <a href="javascript:;" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
-                                                <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a>
+                                                <!-- <a href="javascript:;" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
+                                                <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a> -->
+                                                <a href="#" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 ">
+                                                    <i class="fa fa-solid fa-comment top-3.5 text-white"></i>
+                                                    <span class="sr-only">Icon description</span>
+                                                </a>
+                                                <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                    <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
+                                                    <span class="sr-only">Icon description</span>
+                                                </a>
+                                                <a href="#" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                    <i class="fa fa-solid fa-trash top-3.5 text-white"></i>
+                                                    <span class="sr-only">Icon description</span>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -250,8 +299,20 @@
                                                 <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">04/10/21</span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <a href="javascript:;" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
-                                                <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a>
+                                                <!-- <a href="javascript:;" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
+                                                <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a> -->
+                                                <a href="#" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 ">
+                                                    <i class="fa fa-solid fa-comment top-3.5 text-white"></i>
+                                                    <span class="sr-only">Icon description</span>
+                                                </a>
+                                                <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                    <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
+                                                    <span class="sr-only">Icon description</span>
+                                                </a>
+                                                <a href="#" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                    <i class="fa fa-solid fa-trash top-3.5 text-white"></i>
+                                                    <span class="sr-only">Icon description</span>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -277,8 +338,20 @@
                                                 <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">14/09/20</span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b-0 whitespace-nowrap shadow-transparent">
-                                                <a href="javascript:;" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
-                                                <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a>
+                                                <!-- <a href="javascript:;" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
+                                                <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a> -->
+                                                <a href="#" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 ">
+                                                    <i class="fa fa-solid fa-comment top-3.5 text-white"></i>
+                                                    <span class="sr-only">Icon description</span>
+                                                </a>
+                                                <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                    <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
+                                                    <span class="sr-only">Icon description</span>
+                                                </a>
+                                                <a href="#" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                    <i class="fa fa-solid fa-trash top-3.5 text-white"></i>
+                                                    <span class="sr-only">Icon description</span>
+                                                </a>
                                             </td>
                                         </tr>
                                     </tbody>
