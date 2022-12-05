@@ -24,9 +24,9 @@ Route::get('/datasiswa', [adminController::class, 'dataSiswa']);
 
 //forum routes
 Route::get('/forum', [EnduserController::class, 'forumUser']);
-Route::get('/coba', [adminController::class, 'coba']);
+// Route::get('/coba', [adminController::class, 'coba']);
 
-Route::get('/coba', [adminController::class, 'coba']);
+// Route::get('/coba', [adminController::class, 'coba']);
 
 
 //CRUD
