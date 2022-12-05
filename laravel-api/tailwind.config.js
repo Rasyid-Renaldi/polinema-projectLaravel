@@ -14,6 +14,10 @@ module.exports = {
       colors: {
         primary: '#E36559',
         secondary: '#000000',
+        secondary1: '#2b3137',
+        card: '#414346',
+        card1: '#4E4F50',
+        hovering: '#8a8a8a',
       }
     },
   },
