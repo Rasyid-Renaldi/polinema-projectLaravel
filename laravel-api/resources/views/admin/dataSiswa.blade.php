@@ -144,15 +144,15 @@
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
                                                 <!-- <a href="/editsiswa" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
                                                 <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a> -->
-                                                
+
                                                 <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
                                                     <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
                                                     <span class="sr-only">Icon description</span>
                                                 </a>
-                                                <a href="#" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
-                                                    <i class="fa fa-solid fa-trash top-3.5 text-white"></i>
-                                                    <span class="sr-only">Icon description</span>
-                                                </a>
+                                                <button class="bg-red-500 text-white hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1" type="button" onclick="toggleModal('modal-id')">
+                                                    <i class=" fa fa-solid fa-trash top-3.5 text-white"></i>
+                                                </button>
+
 
                                             </td>
                                         </tr>
@@ -181,15 +181,14 @@
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
                                                 <!-- <a href="javascript:;" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
                                                 <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a> -->
-                                                
+
                                                 <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
                                                     <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
                                                     <span class="sr-only">Icon description</span>
                                                 </a>
-                                                <a href="#" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
-                                                    <i class="fa fa-solid fa-trash top-3.5 text-white"></i>
-                                                    <span class="sr-only">Icon description</span>
-                                                </a>
+                                                <button class="bg-red-500 text-white hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1" type="button" onclick="toggleModal('modal-id')">
+                                                    <i class=" fa fa-solid fa-trash top-3.5 text-white"></i>
+                                                </button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -215,15 +214,14 @@
                                                 <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">19/09/17</span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                
+
                                                 <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
                                                     <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
                                                     <span class="sr-only">Icon description</span>
                                                 </a>
-                                                <a href="#" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
-                                                    <i class="fa fa-solid fa-trash top-3.5 text-white"></i>
-                                                    <span class="sr-only">Icon description</span>
-                                                </a>
+                                                <button class="bg-red-500 text-white hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1" type="button" onclick="toggleModal('modal-id')">
+                                                    <i class=" fa fa-solid fa-trash top-3.5 text-white"></i>
+                                                </button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -249,15 +247,14 @@
                                                 <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">24/12/08</span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                
+
                                                 <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
                                                     <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
                                                     <span class="sr-only">Icon description</span>
                                                 </a>
-                                                <a href="#" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
-                                                    <i class="fa fa-solid fa-trash top-3.5 text-white"></i>
-                                                    <span class="sr-only">Icon description</span>
-                                                </a>
+                                                <button class="bg-red-500 text-white hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1" type="button" onclick="toggleModal('modal-id')">
+                                                    <i class=" fa fa-solid fa-trash top-3.5 text-white"></i>
+                                                </button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -283,15 +280,14 @@
                                                 <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">04/10/21</span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                
+
                                                 <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
                                                     <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
                                                     <span class="sr-only">Icon description</span>
                                                 </a>
-                                                <a href="#" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
-                                                    <i class="fa fa-solid fa-trash top-3.5 text-white"></i>
-                                                    <span class="sr-only">Icon description</span>
-                                                </a>
+                                                <button class="bg-red-500 text-white hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1" type="button" onclick="toggleModal('modal-id')">
+                                                    <i class=" fa fa-solid fa-trash top-3.5 text-white"></i>
+                                                </button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -317,15 +313,14 @@
                                                 <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">14/09/20</span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b-0 whitespace-nowrap shadow-transparent">
-                                                
+
                                                 <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
                                                     <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
                                                     <span class="sr-only">Icon description</span>
                                                 </a>
-                                                <a href="#" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
-                                                    <i class="fa fa-solid fa-trash top-3.5 text-white"></i>
-                                                    <span class="sr-only">Icon description</span>
-                                                </a>
+                                                <button class="bg-red-500 text-white hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1" type="button" onclick="toggleModal('modal-id')">
+                                                    <i class=" fa fa-solid fa-trash top-3.5 text-white"></i>
+                                                </button>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -335,6 +330,50 @@
                     </div>
                 </div>
             </div>
+            <!-- pop up hapus postingan -->
+            <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-id">
+                <div class="relative w-auto my-6 mx-auto max-w-3xl">
+                    <!--content-->
+                    <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                        <!--header-->
+                        <div class="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                            <h3 class="text-3xl font-semibold">
+                                Peringatan
+                            </h3>
+                            <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal('modal-id')">
+                                <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                    ×
+                                </span>
+                            </button>
+                        </div>
+                        <!--body-->
+                        <div class="relative p-6 flex-auto">
+                            <p class="my-4 text-slate-500 text-lg leading-relaxed">
+                                Apakah anda yakin ingin menghapus?
+                            </p>
+                        </div>
+                        <!--footer-->
+                        <div class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+                            <button class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
+                                Tidak
+                            </button>
+                            <button class="bg-red-500 text-white active:bg-red-300 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
+                                Hapus Postingan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden opacity-50 fixed inset-0 z-40 bg-black" id="modal-id-backdrop"></div>
+            <script type="text/javascript">
+                function toggleModal(modalID) {
+                    document.getElementById(modalID).classList.toggle("hidden");
+                    document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
+                    document.getElementById(modalID).classList.toggle("flex");
+                    document.getElementById(modalID + "-backdrop").classList.toggle("flex");
+                }
+            </script>
+            <!-- end pop up -->
             <!-- endtable -->
         </div>
     </main>
