@@ -111,7 +111,7 @@
                                 <p class="font-semibold pt-5 text-black capitalize">Sampaikan Informasi</p>
 
                                 <!--start form Pertanyaan -->
-                                <form method="POST" action="{{ route('category.store') }}" enctype="multipart/form-data">
+                                <form>
                                     @csrf
                                     
                                     <div class="w-full mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
