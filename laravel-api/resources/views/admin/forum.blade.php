@@ -118,10 +118,10 @@
                                         Sampaikan Informasi
                                     </a>
                                 </div>
-                                <h5 class="font-bold text-black capitalize mt-5">Topik Pembahasan</h5>
+                                
 
                                 <!-- bar pencarian -->
-                                <form class="flex items-center">
+                                <form class="flex items-center mt-2">
                                     <label for="simple-search" class="sr-only">Search</label>
                                     <div class="relative w-full">
                                         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -140,24 +140,115 @@
                                 </form>
                                 <!-- bar pencarian -->
 
-                                <!-- start card -->
-                                <div class="block w-full p-6 mt-4 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 dark:bg-gray-800 ">
-                                    <a href="/detailtanya">
-                                        <p class="mb-2 text-lg font-bold tracking-tight text-gray-700 dark:text-white">Topik Pembahasan 1</p>
-                                        <p class="mb-2 text-sm font-medium tracking-tight text-gray-500 dark:text-white">Terdapat 10 Diskusi</p>
-                                    </a>
-                                </div>
-                                <div class="block w-full p-6 mt-4 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 dark:bg-gray-800 ">
-                                    <a href="#">
-                                        <p class="mb-2 text-lg font-bold tracking-tight text-gray-700 dark:text-white">Noteworthy technology acquisitions 2021</p>
-                                        <p class="mb-2 text-sm font-medium tracking-tight text-gray-500 dark:text-white">Terdapat 11 Diskusi</p>
-                                    </a>
-                                </div>
-                                <div class="block w-full p-6 mt-4 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 dark:bg-gray-800 ">
-                                    <a href="#">
-                                        <p class="mb-2 text-lg font-bold tracking-tight text-gray-700 dark:text-white">Noteworthy technology acquisitions 2021</p>
-                                        <p class="mb-2 text-sm font-medium tracking-tight text-gray-500 dark:text-white">Terdapat 12 Diskusi</p>
-                                    </a>
+                                <div class="flex flex-wrap -mx-3 mt-5">
+                                    <div class="flex-none w-full max-w-full px-3">
+                                        <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
+                                            <div class="flex-auto px-0 pt-0 pb-2">
+                                                <div class="p-0 overflow-x-auto">
+                                                    <table class="items-center w-full mb-0 align-top border-collapse dark:border-white/40 text-slate-500">
+                                                        <thead class="align-bottom">
+                                                            <tr>
+                                                                <th class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Nama Topik Diskusi</th>
+                                                                <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Total Postingan</th>
+                                                                <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Total User</th>
+                                                                <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Tanggal Dibuat</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
+                                                                    <div class="flex px-2 ml-2">
+                                                                        <div class="flex flex-col justify-center">
+                                                                            <a href="/detailtanya">
+                                                                                <p class="mb-0 text-xs font-bold leading-tight text-black opacity-80">Topik Diskusi 1</p>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
+                                                                    <p class="mb-0 text-xs font-semibold leading-tight text-black opacity-80">2 Postingan</p>
+                                                                </td>
+                                                                <td class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
+                                                                    <p class="mb-0 text-xs font-semibold leading-tight text-black opacity-80">10 Siswa</p>
+                                                                </td>
+                                                                <td class="p-2 text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
+                                                                    <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">23/04/2021</span>
+                                                                </td>
+                                                                <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
+                                                                    <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                                        <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
+                                                                        <span class="sr-only">Icon description</span>
+                                                                    </a>
+                                                                    <button class="bg-red-500 text-white hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1" type="button" onclick="toggleModal('modal-id')">
+                                                                        <i class=" fa fa-solid fa-trash top-3.5 text-white"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
+                                                                    <div class="flex px-2 ml-2">
+                                                                        <div class="flex flex-col justify-center">
+                                                                            <a href="/detailtanya">
+                                                                                <p class="mb-0 text-xs font-bold leading-tight text-black opacity-80">Topik Diskusi 2</p>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
+                                                                    <p class="mb-0 text-xs font-semibold leading-tight text-black opacity-80">2 Postingan</p>
+                                                                </td>
+                                                                <td class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
+                                                                    <p class="mb-0 text-xs font-semibold leading-tight text-black opacity-80">10 Siswa</p>
+                                                                </td>
+                                                                <td class="p-2 text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
+                                                                    <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">23/04/2021</span>
+                                                                </td>
+                                                                <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
+                                                                    <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                                        <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
+                                                                        <span class="sr-only">Icon description</span>
+                                                                    </a>
+                                                                    <button class="bg-red-500 text-white hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1" type="button" onclick="toggleModal('modal-id')">
+                                                                        <i class=" fa fa-solid fa-trash top-3.5 text-white"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
+                                                                    <div class="flex px-2 ml-2">
+                                                                        <div class="flex flex-col justify-center">
+                                                                            <a href="/detailtanya">
+                                                                                <p class="mb-0 text-xs font-bold leading-tight text-black opacity-80">Topik Diskusi 3</p>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
+                                                                    <p class="mb-0 text-xs font-semibold leading-tight text-black opacity-80">2 Postingan</p>
+                                                                </td>
+                                                                <td class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
+                                                                    <p class="mb-0 text-xs font-semibold leading-tight text-black opacity-80">10 Siswa</p>
+                                                                </td>
+                                                                <td class="p-2 text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
+                                                                    <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">23/04/2021</span>
+                                                                </td>
+                                                                <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
+                                                                    <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                                        <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
+                                                                        <span class="sr-only">Icon description</span>
+                                                                    </a>
+                                                                    <button class="bg-red-500 text-white hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1" type="button" onclick="toggleModal('modal-id')">
+                                                                        <i class=" fa fa-solid fa-trash top-3.5 text-white"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
