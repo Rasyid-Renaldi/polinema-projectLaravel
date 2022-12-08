@@ -118,112 +118,54 @@
                                         Sampaikan Informasi
                                     </a>
                                 </div>
+                                <h5 class="font-bold text-black capitalize mt-5">Topik Pembahasan</h5>
+
+                                <!-- bar pencarian -->
+                                <form class="flex items-center">
+                                    <label for="simple-search" class="sr-only">Search</label>
+                                    <div class="relative w-full">
+                                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                        <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Cari Berdasarkan Topik" required>
+                                    </div>
+                                    <button type="submit" class="p-2.5 ml-2 text-sm font-medium text-white bg-red-500 rounded-lg border hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                        </svg>
+                                        <span class="sr-only">Search</span>
+                                    </button>
+                                </form>
+                                <!-- bar pencarian -->
 
                                 <!-- start card -->
                                 <div class="block w-full p-6 mt-4 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 dark:bg-gray-800 ">
-                                    <div class="py-2 mt-2">
-                                        <img class="-mt-3" width="35" height="35" src="./assets/img/avatar-new/rokigarong.svg"></a>
-                                        <div class="ml-12 justify-between -mt-10">
-                                            <h5 class="mb-2 mt-1 text-lg font-bold tracking-tight text-gray-600">
-                                                <a href="/detailtanya" class="text-gray-600">Nur Kamdi Albaron</a>
-                                            </h5>
-                                            <h1 class="font-medium text-sm md:text-1xl lg:text-2xl -mt-2 text-left md:text-left space-x-10 opacity-50">2 Menit Yang Lalu</h1>
-                                            <div class="flex ml-12 justify-right">
-                                                <!-- <img class="mt- md:absolute -mt-10 md:mt right-0 -z-1 mr-20" width="20" height="35" src="./assets/img/newimages/sett.svg"></a> -->
-                                                <div class="mt- md:absolute -mt-10 md:mt right-0 -z-1 mr-20">
-                                                    <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
-                                                        <img width="20" height="20" src="./assets/img/newimages/sett.svg"></a>
-                                                    </button>
-                                                    <!-- Dropdown menu -->
-                                                    <div id="dropdownDots" class="hidden z-10 w-35 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
-                                                        <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
-                                                            <li>
-                                                                <button class="bg-transparant text-black opacity-80 active:bg-red-300 font-medium text-sm px-4 py-2 rounded hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear text-left transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
-                                                                    Hapus Postingan
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/editpostingan" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Edit</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        {{--? Memunculkan kolom diskusi dari database server --}}
-                                        <p class="font-normal text-sm text-gray-700">halo teman teman minta pendapat aku lagi ngerjain tugas ini,
-                                            enaknya dikerjakan pake bahasa pemrograman apa ya
-                                        </p>
-                                        <div class="flex mt-4 space-x-6">
-                                            <a href="#">
-                                                <img class="" src="../assets/img/icons/btn/love-btn.svg" width="15" height="15">
-                                                <p class="flex flex-wrap -mt-5 ml-5 font-normal text-sm text-black opacity-50 justify-end">200 Suka</p>
-                                            </a>
-                                            <a href="#">
-                                                <img src="../assets/img/icons/btn/coment-btn.svg" width="15" height="15">
-                                                <p class="flex flex-wrap -mt-5 ml-5 font-normal text-sm text-black opacity-50 justify-end">1 Komentar</p>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <a href="/detailtanya">
+                                        <p class="mb-2 text-lg font-bold tracking-tight text-gray-700 dark:text-white">Topik Pembahasan 1</p>
+                                        <p class="mb-2 text-sm font-medium tracking-tight text-gray-500 dark:text-white">Terdapat 10 Diskusi</p>
+                                    </a>
                                 </div>
-                                {{--? sampek sini batesnya  --}}
-                                {{--! coba... --}}
                                 <div class="block w-full p-6 mt-4 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 dark:bg-gray-800 ">
-                                    <div class="py-2 mt-2">
-                                        <img class="-mt-3" width="35" height="35" src="./assets/img/avatar-new/rokigarong.svg"></a>
-                                        <div class="ml-12 justify-between -mt-10">
-                                            <h5 class="mb-2 mt-1 text-lg font-bold tracking-tight text-gray-600">
-                                                <a href="/detailtanya" class="text-gray-600">Muhammad Ali Al-Malangiy</a>
-                                            </h5>
-                                            <h1 class="font-medium text-sm md:text-1xl lg:text-2xl -mt-2 text-left md:text-left space-x-10 opacity-50">2 Menit Yang Lalu</h1>
-                                            <div class="flex ml-12 justify-right">
-                                                <!-- <img class="mt- md:absolute -mt-10 md:mt right-0 -z-1 mr-20" width="20" height="35" src="./assets/img/newimages/sett.svg"></a> -->
-                                                <div class="mt- md:absolute -mt-10 md:mt right-0 -z-1 mr-20">
-                                                    <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
-                                                        <img width="20" height="20" src="./assets/img/newimages/sett.svg"></a>
-                                                    </button>
-                                                    <!-- Dropdown menu -->
-                                                    <div id="dropdownDots" class="hidden z-10 w-35 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
-                                                        <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
-                                                            <li>
-                                                                <button class="bg-transparant text-black opacity-80 active:bg-red-300 font-medium text-sm px-4 py-2 rounded hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear text-left transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
-                                                                    Hapus Postingan
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/editpostingan" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Edit</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        {{--? Memunculkan kolom diskusi dari database server --}}
-                                        <p class="font-normal text-sm text-gray-700">halo teman teman minta pendapat aku lagi ngerjain tugas ini,
-                                            enaknya dikerjakan pake bahasa pemrograman apa ya
-                                        </p>
-                                        <div class="flex mt-4 space-x-6">
-                                            <a href="#">
-                                                <img class="" src="../assets/img/icons/btn/love-btn.svg" width="15" height="15">
-                                                <p class="flex flex-wrap -mt-5 ml-5 font-normal text-sm text-black opacity-50 justify-end">200 Suka</p>
-                                            </a>
-                                            <a href="#">
-                                                <img src="../assets/img/icons/btn/coment-btn.svg" width="15" height="15">
-                                                <p class="flex flex-wrap -mt-5 ml-5 font-normal text-sm text-black opacity-50 justify-end">1 Komentar</p>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <a href="#">
+                                        <p class="mb-2 text-lg font-bold tracking-tight text-gray-700 dark:text-white">Noteworthy technology acquisitions 2021</p>
+                                        <p class="mb-2 text-sm font-medium tracking-tight text-gray-500 dark:text-white">Terdapat 11 Diskusi</p>
+                                    </a>
+                                </div>
+                                <div class="block w-full p-6 mt-4 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 dark:bg-gray-800 ">
+                                    <a href="#">
+                                        <p class="mb-2 text-lg font-bold tracking-tight text-gray-700 dark:text-white">Noteworthy technology acquisitions 2021</p>
+                                        <p class="mb-2 text-sm font-medium tracking-tight text-gray-500 dark:text-white">Terdapat 12 Diskusi</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- endtable -->
-        </div>
+                <!-- endtable -->
+            </div>
 
     </main>
     <!-- pop up hapus postingan -->
