@@ -45,3 +45,4 @@ Route::get('/admintanya', [adminController::class, 'adminTanya']);
 Route::get('/detailtanya', [adminController::class, 'detailTanya']);
 Route::get('/editpostingan', [adminController::class, 'editPostingan']);
 Route::get('/editkomentar', [adminController::class, 'editKomen']);
+Route::get('/editForum', [adminController::class, 'editForum']);

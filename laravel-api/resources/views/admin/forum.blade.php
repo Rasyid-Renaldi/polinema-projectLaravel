@@ -100,156 +100,141 @@
                 <div class="flex-none w-full max-w-full px-3">
                     <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
                         <div class="p-6 pb-0 mb-0 border-b-0 border-b-solid rounded-t-2xl border-b-transparent">
-                            <ol class="flex flex-wrap pt-1 mr-12 bg-transparent rounded-lg sm:mr-16">
-                                <li class="text-base leading-normal">
-                                    <a class="text-black opacity-50" href="javascript:;">Pages</a>
-                                </li>
-                                <!-- <li class="text-sm pl-2 capitalize leading-normal text-black before:float-left before:pr-2 before:text-black before:content-['/']">Detail Laporan</li> -->
-                                <li class="text-base leading-normal ml-1">
-                                    <a class="text-black opacity-80" href="/dataLaporan"> / Forum</a>
-                                </li>
-                            </ol>
-                            <h5 class="mb-0 font-bold text-black capitalize">Forum</h5>
                             <div class="mb-6">
-                                <h5 class="mb-0 pt-6 font-bold text-black capitalize">Forum Diskusi MejaKita</h5>
+                                <h5 class="mb-0 font-bold text-black capitalize">Forum Diskusi MejaKita</h5>
                                 <div class="py-4">
                                     <!-- <button type="submit" class="py-1 px-3 text-sm font-medium text-center text-white rounded-lg bg-red-500 sm:w-fit hover:bg-red-400 focus:ring-4 focus:outline-none focus:ring-primary-300">Yuk Tanya</button> -->
                                     <a href="/admintanya" class="bg-red-500 hover:bg-red-400 text-white font-medium py-2 px-4 rounded-lg">
                                         Sampaikan Informasi
                                     </a>
                                 </div>
-                                
+
 
                                 <!-- bar pencarian -->
-                                <form class="flex items-center mt-2">
-                                    <label for="simple-search" class="sr-only">Search</label>
-                                    <div class="relative w-full">
-                                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
-                                            </svg>
-                                        </div>
-                                        <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Cari Berdasarkan Topik" required>
-                                    </div>
-                                    <button type="submit" class="p-2.5 ml-2 text-sm font-medium text-white bg-red-500 rounded-lg border hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                                        </svg>
-                                        <span class="sr-only">Search</span>
-                                    </button>
-                                </form>
-                                <!-- bar pencarian -->
-
-                                <div class="flex flex-wrap -mx-3 mt-5">
-                                    <div class="flex-none w-full max-w-full px-3">
-                                        <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
-                                            <div class="flex-auto px-0 pt-0 pb-2">
-                                                <div class="p-0 overflow-x-auto">
-                                                    <table class="items-center w-full mb-0 align-top border-collapse dark:border-white/40 text-slate-500">
-                                                        <thead class="align-bottom">
-                                                            <tr>
-                                                                <th class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Nama Topik Diskusi</th>
-                                                                <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Total Postingan</th>
-                                                                <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Total User</th>
-                                                                <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Tanggal Dibuat</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                                    <div class="flex px-2 ml-2">
-                                                                        <div class="flex flex-col justify-center">
-                                                                            <a href="/detailtanya">
-                                                                                <p class="mb-0 text-xs font-bold leading-tight text-black opacity-80">Topik Diskusi 1</p>
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                                <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                                    <p class="mb-0 text-xs font-semibold leading-tight text-black opacity-80">2 Postingan</p>
-                                                                </td>
-                                                                <td class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                                    <p class="mb-0 text-xs font-semibold leading-tight text-black opacity-80">10 Siswa</p>
-                                                                </td>
-                                                                <td class="p-2 text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                                    <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">23/04/2021</span>
-                                                                </td>
-                                                                <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                                    <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
-                                                                        <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
-                                                                        <span class="sr-only">Icon description</span>
-                                                                    </a>
-                                                                    <button class="bg-red-500 text-white hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1" type="button" onclick="toggleModal('modal-id')">
-                                                                        <i class=" fa fa-solid fa-trash top-3.5 text-white"></i>
-                                                                    </button>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                                    <div class="flex px-2 ml-2">
-                                                                        <div class="flex flex-col justify-center">
-                                                                            <a href="/detailtanya">
-                                                                                <p class="mb-0 text-xs font-bold leading-tight text-black opacity-80">Topik Diskusi 2</p>
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                                <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                                    <p class="mb-0 text-xs font-semibold leading-tight text-black opacity-80">2 Postingan</p>
-                                                                </td>
-                                                                <td class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                                    <p class="mb-0 text-xs font-semibold leading-tight text-black opacity-80">10 Siswa</p>
-                                                                </td>
-                                                                <td class="p-2 text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                                    <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">23/04/2021</span>
-                                                                </td>
-                                                                <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                                    <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
-                                                                        <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
-                                                                        <span class="sr-only">Icon description</span>
-                                                                    </a>
-                                                                    <button class="bg-red-500 text-white hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1" type="button" onclick="toggleModal('modal-id')">
-                                                                        <i class=" fa fa-solid fa-trash top-3.5 text-white"></i>
-                                                                    </button>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                                    <div class="flex px-2 ml-2">
-                                                                        <div class="flex flex-col justify-center">
-                                                                            <a href="/detailtanya">
-                                                                                <p class="mb-0 text-xs font-bold leading-tight text-black opacity-80">Topik Diskusi 3</p>
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                                <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                                    <p class="mb-0 text-xs font-semibold leading-tight text-black opacity-80">2 Postingan</p>
-                                                                </td>
-                                                                <td class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                                    <p class="mb-0 text-xs font-semibold leading-tight text-black opacity-80">10 Siswa</p>
-                                                                </td>
-                                                                <td class="p-2 text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                                    <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">23/04/2021</span>
-                                                                </td>
-                                                                <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                                    <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
-                                                                        <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
-                                                                        <span class="sr-only">Icon description</span>
-                                                                    </a>
-                                                                    <button class="bg-red-500 text-white hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1" type="button" onclick="toggleModal('modal-id')">
-                                                                        <i class=" fa fa-solid fa-trash top-3.5 text-white"></i>
-                                                                    </button>
-                                                                </td>
-                                                            </tr>
-
-                                                        </tbody>
-                                                    </table>
-                                                </div>
+                                <div class="pb-5">
+                                    <form class="flex items-center mt-2">
+                                        <label for="simple-search" class="sr-only">Search</label>
+                                        <div class="relative w-full">
+                                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                                <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+                                                </svg>
                                             </div>
+                                            <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Cari Berdasarkan Topik" required>
                                         </div>
-                                    </div>
+                                        <button type="submit" class="p-2.5 ml-2 text-sm font-medium text-white bg-red-500 rounded-lg border hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                            </svg>
+                                            <span class="sr-only">Search</span>
+                                        </button>
+                                    </form>
                                 </div>
+                                <!-- bar pencarian -->
+                                <!-- start table forum -->
+
+                                <div class="overflow-x-auto relative shadow-md sm:rounded-lg pt-5 pl-5 pr-5">
+                                    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                                            <tr>
+                                                <th scope="col" class="py-3 px-6">
+                                                    Nama Topik Diskusi
+                                                </th>
+                                                <th scope="col" class="py-3 px-6">
+                                                    Total Postingan
+                                                </th>
+                                                <th scope="col" class="py-3 px-6">
+                                                    Total Siswa Yang Sedang Berdiskusi
+                                                </th>
+                                                <th scope="col" class="py-3 px-6">
+                                                    Tanggal Dibuat
+                                                </th>
+                                                <th scope="col" class="py-3 px-6">
+                                                    Action
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                                    <a href="/detailtanya">
+                                                        <p class="mb-0 leading-tight text-black opacity-80">Topik Diskusi 1</p>
+                                                    </a>
+                                                </th>
+                                                <td class="py-4 px-6">
+                                                    10
+                                                </td>
+                                                <td class="py-4 px-6">
+                                                    12
+                                                </td>
+                                                <td class="py-4 px-6">
+                                                    27/8/2022
+                                                </td>
+                                                <td class="py-4 px-6">
+                                                    <a href="/editForum" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                        <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
+                                                        <span class="sr-only">Icon description</span>
+                                                    </a>
+                                                    <button class="bg-red-500 text-white hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1" type="button" onclick="toggleModal('modal-id')">
+                                                        <i class=" fa fa-solid fa-trash top-3.5 text-white"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                                    <a href="/detailtanya">
+                                                        <p class="mb-0 leading-tight text-black opacity-80">Topik Diskusi 2</p>
+                                                    </a>
+                                                </th>
+                                                <td class="py-4 px-6">
+                                                    10
+                                                </td>
+                                                <td class="py-4 px-6">
+                                                    12
+                                                </td>
+                                                <td class="py-4 px-6">
+                                                    27/8/2022
+                                                </td>
+                                                <td class="py-4 px-6">
+                                                    <a href="/editForum" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                        <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
+                                                        <span class="sr-only">Icon description</span>
+                                                    </a>
+                                                    <button class="bg-red-500 text-white hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1" type="button" onclick="toggleModal('modal-id')">
+                                                        <i class=" fa fa-solid fa-trash top-3.5 text-white"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                                    <a href="/detailtanya">
+                                                        <p class="mb-0 leading-tight text-black opacity-80">Topik Diskusi 3</p>
+                                                    </a>
+                                                </th>
+                                                <td class="py-4 px-6">
+                                                    10
+                                                </td>
+                                                <td class="py-4 px-6">
+                                                    12
+                                                </td>
+                                                <td class="py-4 px-6">
+                                                    27/8/2022
+                                                </td>
+                                                <td class="py-4 px-6">
+                                                    <a href="/editForum" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                        <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
+                                                        <span class="sr-only">Icon description</span>
+                                                    </a>
+                                                    <button class="bg-red-500 text-white hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1" type="button" onclick="toggleModal('modal-id')">
+                                                        <i class=" fa fa-solid fa-trash top-3.5 text-white"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- end table forum -->
                             </div>
                         </div>
                     </div>

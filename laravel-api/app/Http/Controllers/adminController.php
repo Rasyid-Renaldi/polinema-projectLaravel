@@ -61,4 +61,8 @@ class adminController extends Controller
     {
         return view('admin.editKomen');
     }
+    public function editForum()
+    {
+        return view('admin.editForum');
+    }
 }
