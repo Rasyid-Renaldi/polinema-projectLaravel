@@ -10,4 +10,8 @@ class EndUserController extends Controller
     {
         return view('layouts.forum');
     }
+    public function contact()
+    {
+        return view('layouts.contact');
+    }
 }

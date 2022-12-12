@@ -10,34 +10,34 @@
     <title>Forum</title>
 </head>
 
-<body>
+<body >
     {{--  Navbar Start  --}}
     <div class="flex flex-wrap place-items-center">
         <section class="relative mx-auto">
-            <!-- navbar -->
-            <nav class="flex justify-between bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600  text-white w-screen">
+            <nav class="flex justify-between bg-transparent text-white w-screen">
                 <div class="px-5 xl:px-12 py-6 flex w-full items-center">
-                        <a href="" class="">
-                            <img class="w-36 h-7" src="https://www.mejakita.com/images/logo-new.png?imwidth=256 "alt="">
-                        </a>
-                    <!-- Nav Links -->
+                    <a href="" class="">
+                        <img class="w-36 h-7"
+                            src="https://www.mejakita.com/images/logo-new.png?imwidth=256 "alt="">
+                    </a>
+                    {{--  <!-- Nav Links -->  --}}
                     <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
-                        <li><a class="hover:text-white text-slate-100" href="#">Beranda</a></li>
-                        <li><a class="hover:text-white text-gray-900" href="#">Tentang Kami</a></li>
-                        <li><a class="hover:text-white text-gray-900" href="#">Support</a></li>
+                        <li><a class="hover:text-primary text-gray-300" href="#">Beranda</a></li>
+                        <li><a class="hover:text-primary text-gray-900" href="/contact">Contact</a></li>
+                        <li><a class="hover:text-primary text-gray-900" href="#">Support</a></li>
                     </ul>
-                    <!-- Header Icons -->
+                    {{--  <!-- Header Icons -->  --}}
                     <div class="hidden xl:flex items-center space-x-5">
                         <a class="hover:text-blue-400" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-black hover:stroke-white" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-black hover:stroke-white"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                             </svg>
                         </a>
                         <a class="flex items-center hover:text-gray-200" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-black hover:stroke-white" fill="none" viewBox="0 0 24 24"
-                                >
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-black hover:stroke-white"
+                                fill="none" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                             </svg>
@@ -50,8 +50,8 @@
                         </a>
                         <!-- Sign In / Register      -->
                         <a class="flex items-center hover:text-gray-200" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-black hover:stroke-white" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-black hover:stroke-white"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
@@ -59,7 +59,7 @@
 
                     </div>
                 </div>
-                <!-- Responsive navbar -->
+                {{--  <!-- Responsive navbar -->  --}}
                 <a class="xl:hidden flex mr-6 items-center" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
@@ -81,13 +81,12 @@
                     </svg>
                 </a>
             </nav>
-
         </section>
     </div>
     {{--  Navbar End  --}}
 
-    <section>
-        <div class="flex  bg-secondary1">
+    <section class="w-screen">
+        <div class="flex bg-secondary1">
             <div class="w-1/5 h-screen mt-6">
                 <div
                     class="flex text-m font-semibold px-3 py-2 items-center rounded-lg m-2 text-white transition ease-in-out delay-150 bg-secondary1 hover:-translate-y-1 hover:scale-110 hover:bg-gradient-to-b from-sky-400 to-sky-200 hover:text-secondary duration-300">
@@ -144,8 +143,8 @@
                 <div class="shadow-sm bg-card my-3 mx-6 w-3/5 h-16 rounded-md flex items-center">
                     <div class="m-3 bg-blue-100 rounded-full cursor-move">
                         <a href="#">
-                        <img src="https://cdn-icons-png.flaticon.com/128/2956/2956214.png" width="25"
-                            height="25" alt="">
+                            <img src="https://cdn-icons-png.flaticon.com/128/2956/2956214.png" width="25"
+                                height="25" alt="">
                         </a>
                     </div>
                     <div>
@@ -210,9 +209,23 @@
                                 Saya izin bertanya, apakah ini termasuk nilai X dan Y.
                             </div>
                         </div>
-                        <div class="bg-red-100 mt-2">
-                            <div class="">
-                                <img src="./assets/img/icons/svg/xdany.png" class="w-3/4" alt="">
+                        <div class="mt-2">
+                            <div class="w-full">
+                                <img src="./assets/img/icons/svg/xdany.png" alt="">
+                            </div>
+                        </div>
+                        <div class="flex flex-row w-full py-3 pl-4">
+                            <button>
+                                <img class="h-6 w-6" src="./assets/img/icons/svg/Vector.svg" alt="">
+                            </button>
+                            <span class="ml-2 font-semibold text-white">71</span>
+                            <div class="ml-auto mr-8 text-gray-300 text-md">
+                               24 Komentar
+                            </div>
+                        </div>
+                        <div class="flex flex-nowrap justify-center">
+                            <div class="bg-red-100">
+                                Hello
                             </div>
                         </div>
                     </div>
@@ -224,7 +237,7 @@
                 {{--  Section Side RighT Start  --}}
             </div>
             <div class="w-1/5 h-screen">
-                <div class="mt-6 ml-6 font-semibold text-lg text-white">
+                <div class="mt-6 ml-5 font-semibold text-lg text-white">
                     Siswa Online
                 </div>
                 <div class="px-4 mt-2 flex flex-row">
@@ -244,22 +257,6 @@
                         width="42" height="42"
                         src="https://mejakita.com/assets/images/profile_default.png"></a>
                     <p class="px-2 py-2 text-white">Siswa Online</p>
-                </div>
-                <div class="px-4 mt-2 flex flex-wrap">
-                    <img class="mb-2 p-1 w-10 h-10 rounded-full ring-2  ring-green-600 hover: delay-100"
-                        width="42" height="42"
-                        src="https://mejakita.com/assets/images/profile_default.png"></a>
-                    <p class="px-2 py-2 text-white">Siswa Online</p>
-                </div>
-                <div class="px-4 mt-2 flex flex-wrap opacity-20 hover:opacity-100">
-                    <img class="mb-2 p-1 w-10 h-10 rounded-full ring-2 ring-slate-500" width="42" height="42"
-                        src="https://mejakita.com/assets/images/profile_default.png"></a>
-                    <p class="px-2 py-2 text-white">Siswa Offline</p>
-                </div>
-                <div class="px-4 mt-2 flex flex-wrap opacity-20 hover:opacity-100">
-                    <img class="mb-2 p-1 w-10 h-10 rounded-full ring-2 ring-slate-500" width="42" height="42"
-                        src="https://mejakita.com/assets/images/profile_default.png"></a>
-                    <p class="px-2 py-2 text-white">Siswa Offline</p>
                 </div>
                 <div class="px-4 mt-2 flex flex-wrap opacity-20 hover:opacity-100">
                     <img class="mb-2 p-1 w-10 h-10 rounded-full ring-2 ring-slate-500" width="42" height="42"
