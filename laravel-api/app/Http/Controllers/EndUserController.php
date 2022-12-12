@@ -14,4 +14,7 @@ class EndUserController extends Controller
     {
         return view('layouts.contact');
     }
+    public function support(){
+        return view ('layouts.support');
+    }
 }

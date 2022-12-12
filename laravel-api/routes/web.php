@@ -25,6 +25,7 @@ Route::get('/datasiswa', [adminController::class, 'dataSiswa']);
 //forum routes
 Route::get('/forum', [EnduserController::class, 'forumUser']);
 Route::get('/contact', [EnduserController::class, 'contact']);
+Route::get('/support', [EnduserController::class, 'support']);
 // Route::get('/coba', [adminController::class, 'coba']);
 
 // Route::get('/coba', [adminController::class, 'coba']);

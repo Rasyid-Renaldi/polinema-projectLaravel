@@ -24,7 +24,7 @@
                     <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
                         <li><a class="hover:text-primary text-gray-900" href="/forum">Beranda</a></li>
                         <li><a class="hover:text-primary text-gray-300" href="#">Contact</a></li>
-                        <li><a class="hover:text-primary text-gray-900" href="#">Support</a></li>
+                        <li><a class="hover:text-primary text-gray-900" href="/support">Support</a></li>
                     </ul>
                     {{--  <!-- Header Icons -->  --}}
                     <div class="hidden xl:flex items-center space-x-5">
@@ -104,7 +104,7 @@
                             clip-rule="evenodd"></path>
                     </svg>
                 </a>
-                <a href="#"
+                <a href="https://www.youtube.com/@Mejakita/featured" target="_blank"
                     class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
                     <svg class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
@@ -272,8 +272,7 @@
                 </div>
                 <p class="font-medium text-sm text-slate-600 text-center">Dibuat dengan <span
                         class="text-red-500">❤</span> oleh <a href="https://www.instagram.com/mejakita/"
-                        target="_blank" class="text-primary font-bold"> Internship MejaKita</a>, menggunakan <a
-                        href="https://tailwindcss.com/" target="_blank" class="text-tailwind">Tailwind CSS.</a></p>
+                        target="_blank" class="text-primary font-bold"> Internship MejaKita</a>, Copyright 2022-2023 Internship MejaKita</a></p>
             </div>
         </div>
     </section>

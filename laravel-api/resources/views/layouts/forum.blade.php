@@ -24,7 +24,7 @@
                     <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
                         <li><a class="hover:text-primary text-gray-300" href="#">Beranda</a></li>
                         <li><a class="hover:text-primary text-gray-900" href="/contact">Contact</a></li>
-                        <li><a class="hover:text-primary text-gray-900" href="#">Support</a></li>
+                        <li><a class="hover:text-primary text-gray-900" href="/support">Support</a></li>
                     </ul>
                     {{--  <!-- Header Icons -->  --}}
                     <div class="hidden xl:flex items-center space-x-5">
