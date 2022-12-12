@@ -171,7 +171,7 @@
                                                     27/8/2022
                                                 </td>
                                                 <td class="py-4 px-6">
-                                                    <a href="/editForum" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                    <a href="/editForum" class="text-white bg-yellow-300 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
                                                         <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
                                                         <span class="sr-only">Icon description</span>
                                                     </a>
@@ -196,7 +196,7 @@
                                                     27/8/2022
                                                 </td>
                                                 <td class="py-4 px-6">
-                                                    <a href="/editForum" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                    <a href="/editForum" class="text-white bg-yellow-300 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
                                                         <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
                                                         <span class="sr-only">Icon description</span>
                                                     </a>
@@ -221,7 +221,7 @@
                                                     27/8/2022
                                                 </td>
                                                 <td class="py-4 px-6">
-                                                    <a href="/editForum" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                    <a href="/editForum" class="text-white bg-yellow-300 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
                                                         <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
                                                         <span class="sr-only">Icon description</span>
                                                     </a>
