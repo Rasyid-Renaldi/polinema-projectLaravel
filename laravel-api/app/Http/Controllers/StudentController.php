@@ -10,6 +10,7 @@ class StudentController extends Controller
     public function getStudents()
     {
         $students = Student::get();
-        return $students;
+        return response()->json($students);
+        // return $students;
     }
 }
