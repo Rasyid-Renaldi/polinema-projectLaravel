@@ -113,7 +113,6 @@
                                             <th class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Nama Siswa</th>
                                             <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Tanggal Laporan</th>
                                             <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Jenis Laporan</th>
-                                            <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Status</th>
                                             <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Aksi</th>
                                         </tr>
                                     </thead>
@@ -134,16 +133,9 @@
                                                 <p class="mb-0 text-xs font-semibold leading-tight text-gray-700 dark:opacity-80">22/07/2022</p>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <p class="mb-0 text-xs font-semibold leading-tight text-gray-700 dark:opacity-80">Laporan Bug Pada Fitur</p>
+                                                <p class="mb-0 text-xs font-semibold leading-tight text-gray-700 dark:opacity-80">Laporan Kesalahan Sistem</p>
                                             </td>
-                                            <td class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <span class="bg-gradient-to-tl from-emerald-500 to-teal-400 px-2.5 text-xs rounded-1.8 py-1.4 inline-block whitespace-nowrap text-center align-baseline font-bold uppercase leading-none text-white">Terselesaikan</span>
-                                            </td>
-                                            <!-- <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                                                    Button
-                                                </button>
-                                            </td> -->
+
                                             <td class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
                                                 <a href="/detail-laporan" class="bg-red-500 hover:bg-red-400 text-white font-bold py-1 px-2 rounded">
                                                     Detail
@@ -167,11 +159,9 @@
                                                 <p class="mb-0 text-xs font-semibold leading-tight text-gray-700 dark:opacity-80">22/07/2022</p>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <p class="mb-0 text-xs font-semibold leading-tight text-gray-700 dark:opacity-80">Laporan bug fitur</p>
+                                                <p class="mb-0 text-xs font-semibold leading-tight text-gray-700 dark:opacity-80">Laporan Kesalahan Sistem</p>
                                             </td>
-                                            <td class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <span class="bg-gradient-to-tl from-slate-600 to-slate-300 px-2.5 text-xs rounded-1.8 py-1.4 inline-block whitespace-nowrap text-center align-baseline font-bold uppercase leading-none text-white">Belum Terselesaikan</span>
-                                            </td>
+
                                             <td class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
                                                 <a href="#" class="bg-red-500 hover:bg-red-400 text-white font-bold py-1 px-2 rounded">
                                                     Detail
