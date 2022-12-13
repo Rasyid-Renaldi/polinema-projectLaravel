@@ -7,5 +7,9 @@ use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
-    //
+    public function getStudents()
+    {
+        $students = Student::get();
+        return $students;
+    }
 }
