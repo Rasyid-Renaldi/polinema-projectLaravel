@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Forum;
+use App\Models\Student;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,7 +16,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(insert_data_forums::class);
+        // $this->call(insert_data_forums::class);
+        $this->call([Forum::class, Student::class]);
+
 
         // \App\Models\User::factory(10)->create();
 

@@ -15,23 +15,38 @@ class insert_data_forums extends Seeder
      */
     public function run()
     {
-        $forums = [
-            [
-                'topics' => 'Fisika',
-                'count_posts' => '5',
-                'count_students' => '10'
-            ],
-            [
-                'topics' => 'Kimia',
-                'count_posts' => '14',
-                'count_students' => '25'
-            ],
-            [
-                'topics' => 'Matematika',
-                'count_posts' => '10',
-                'count_students' => '25'
-            ],
-        ];
-        Forum::insert($forums);
+        Forum::create([
+            'topics' => 'Sosial Budaya',
+            'count_posts' => '10',
+            'count_students' => '15'
+        ]);
+        Forum::create([
+            'topics' => 'Matematika Teknik',
+            'count_posts' => '10',
+            'count_students' => '15'
+        ]);
+        Forum::create([
+            'topics' => 'Biologi',
+            'count_posts' => '30',
+            'count_students' => '100'
+        ]);
+        // $forums = [
+        //     [
+        //         'topics' => 'Fisika',
+        //         'count_posts' => '5',
+        //         'count_students' => '10'
+        //     ],
+        //     [
+        //         'topics' => 'Kimia',
+        //         'count_posts' => '14',
+        //         'count_students' => '25'
+        //     ],
+        //     [
+        //         'topics' => 'Matematika',
+        //         'count_posts' => '10',
+        //         'count_students' => '25'
+        //     ],
+        // ];
+        // Forum::insert($forums);
     }
 }

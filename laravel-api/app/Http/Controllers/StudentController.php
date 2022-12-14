@@ -22,11 +22,11 @@ class StudentController extends Controller
         // return $students;
     }
 
-    public function updateStudents(Request $request)
+    public function updateStudents(Request $request, $id)
     {
         if ($request->isMethod('put')) {
             $students = $request->input();
-            Student::where('id', $students['id'])->update(['name' => $students['name'], 'email' => $students['email'], 'status' => $students['status']]);
+            Student::where('id', $id)->update(['name' => $students['name'], 'email' => $students['email'], 'status' => $students['status']]);
             return response()->json(['message' => "Updated successfully!"], 202);
         }
     }

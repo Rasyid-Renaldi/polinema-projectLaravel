@@ -19,6 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+// ROUTE DATA SISWA => MANAJER DASHBOARD
 Route::namespace('App\Http\Controllers')->group(function () {
     // GET API - Buat menampilkan Data Siswa baik berupa Array maupun berdasar id
     Route::get('students/{id?}', 'StudentController@getStudents');
@@ -27,6 +28,7 @@ Route::namespace('App\Http\Controllers')->group(function () {
     Route::put('update-students/{id?}', 'StudentController@updateStudents');
 });
 
+// ROUTE FORUM => MANAJER DASHBOARD
 Route::namespace('App\Http\Controllers')->group(function () {
     // GET API - Buat menampilkan Data Forum baik berupa Array maupun berdasar id
     Route::get('forums/{id?}', 'ForumController@getForums');
