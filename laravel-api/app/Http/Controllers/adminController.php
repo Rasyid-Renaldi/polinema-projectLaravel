@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Student;
 
 class adminController extends Controller
 {
@@ -64,5 +65,18 @@ class adminController extends Controller
     public function editForum()
     {
         return view('admin.editForum');
+    }
+    public function jajalan()
+    {
+        return view('admin.jajalan');
+    }
+
+    public function getStudents()
+    {
+        $students = Student::get();
+
+        // return response()->json(["students" => $students]);
+        return view('admin.dataSiswa', compact('students'));
+        // return $students;
     }
 }
