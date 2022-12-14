@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\StudentController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -18,5 +19,18 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('students', 'App\Http\Controllers\StudentController@getStudents');
-Route::get('forums', 'App\Http\Controllers\ForumController@getForums');
+Route::namespace('App\Http\Controllers')->group(function () {
+    // GET API - Buat menampilkan Data Siswa baik berupa Array maupun berdasar id
+    Route::get('students/{id?}', 'StudentController@getStudents');
+
+    // PUT API - Buat update detail Data Siswa
+    Route::put('update-students', 'StudentController@updateStudents');
+});
+
+Route::namespace('App\Http\Controllers')->group(function () {
+    // GET API - Buat menampilkan Data Forum baik berupa Array maupun berdasar id
+    Route::get('forums/{id?}', 'ForumController@getForums');
+
+    // PUT API - Buat update detail Forum
+    Route::put('update-forums/{id?}', 'ForumController@updateForums');
+});

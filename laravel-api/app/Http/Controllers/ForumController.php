@@ -12,10 +12,18 @@ class ForumController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function getForums()
+    public function getForums($id = null)
     {
-        $forums = Forum::get();
-        return response()->json(["forums" => $forums]);
+        if (empty($id)) {
+            $forums = Forum::get();
+            return response()->json(["forums" => $forums]);
+        } else {
+            $forums = Forum::find($id);
+            return response()->json(["forums" => $forums]);
+        }
+
+        // $forums = Forum::get();
+        // return response()->json(["forums" => $forums]);
     }
 
     /**
@@ -68,9 +76,34 @@ class ForumController extends Controller
      * @param  \App\Models\Forum  $forum
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Forum $forum)
+    public function updateForums(Request $request, $id)
     {
-        //
+        if ($request->isMethod('put')) {
+            $forums = $request->input();
+
+            // $rules = [
+            //     "topics" => "required|regex:/^[\pL\s\-]+$/u",
+            //     "email" => "required|email|unique:forums",
+            //     "password" => "required"
+            // ];
+
+            // $customMessages = [
+            //     'name.required' => 'Name is required',
+            //     'email.required' => 'Email is required',
+            //     'email.email' => 'Valid Email is required',
+            //     'email.unique' => 'Email already exists in database',
+            //     'password.required' => 'Password is required'
+            // ];
+
+            // $validator = Validator::make($forums, $rules, $customMessages);
+
+            // if ($validator->fails()) {
+            //     return response()->json($validator->errors(), 422);
+            // }
+
+            Forum::where('id', $id)->update(['topics' => $forums['topics'], 'count_posts' => $forums['count_posts'], 'count_students' => $forums['count_students']]);
+            return response()->json(['message' => "Updated successfully!"], 202);
+        }
     }
 
     /**
