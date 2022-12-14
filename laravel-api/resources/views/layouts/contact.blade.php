@@ -23,7 +23,7 @@
                     {{--  <!-- Nav Links -->  --}}
                     <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
                         <li><a class="hover:text-primary text-gray-900" href="/forum">Beranda</a></li>
-                        <li><a class="hover:text-primary text-gray-300" href="#">Contact</a></li>
+                        <li><a class="hover:text-primary text-gray-300" href="#">Contact & Teams</a></li>
                         <li><a class="hover:text-primary text-gray-900" href="/support">Support</a></li>
                     </ul>
                     {{--  <!-- Header Icons -->  --}}

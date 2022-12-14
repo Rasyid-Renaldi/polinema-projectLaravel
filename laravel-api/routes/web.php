@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\adminController;
 use App\Http\Controllers\EnduserController;
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::get('/', [adminController::class, 'index']);
 Route::get('/admin', [adminController::class, 'index']);
-Route::get('/datasiswa', [adminController::class, 'dataSiswa']);
+// Route::get('/datasiswa', [adminController::class, 'dataSiswa']);
 
 //forum routes
 Route::get('/forum', [EnduserController::class, 'forumUser']);
@@ -48,3 +49,8 @@ Route::get('/detailtanya', [adminController::class, 'detailTanya']);
 Route::get('/editpostingan', [adminController::class, 'editPostingan']);
 Route::get('/editkomentar', [adminController::class, 'editKomen']);
 Route::get('/editForum', [adminController::class, 'editForum']);
+// Route::get('/jajal', [adminController::class, 'jajalan']);
+
+//route memanggil data students ke tampilan admin
+Route::get('/jajal', [StudentController::class, 'getStudents']);
+Route::get('/datasiswa', [adminController::class, 'getStudents']);
