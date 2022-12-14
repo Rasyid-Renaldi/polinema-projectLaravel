@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('students', 'App\Http\Controllers\StudentController@getStudents');
+Route::get('forums', 'App\Http\Controllers\ForumController@getForums');
