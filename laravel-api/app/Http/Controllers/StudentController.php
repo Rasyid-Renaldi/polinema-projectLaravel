@@ -9,7 +9,6 @@ class StudentController extends Controller
 {
     public function getStudents($id = null)
     {
-<<<<<<< HEAD
         if (empty($id)) {
             $students = Student::get();
             return response()->json(["students" => $students]);
@@ -20,12 +19,6 @@ class StudentController extends Controller
 
         // $students = Student::get();
         // return response()->json(["students" => $students]);
-=======
-        $students = Student::get();
-        
-        // return response()->json(["students" => $students]);
-        return view('admin.jajalan', compact('students'));
->>>>>>> 528882e891c098457a23c12a829d18a8136ae0cf
         // return $students;
     }
 

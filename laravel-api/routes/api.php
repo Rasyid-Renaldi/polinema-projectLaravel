@@ -24,7 +24,7 @@ Route::namespace('App\Http\Controllers')->group(function () {
     Route::get('students/{id?}', 'StudentController@getStudents');
 
     // PUT API - Buat update detail Data Siswa
-    Route::put('update-students', 'StudentController@updateStudents');
+    Route::put('update-students/{id?}', 'StudentController@updateStudents');
 });
 
 Route::namespace('App\Http\Controllers')->group(function () {
