@@ -52,5 +52,13 @@ Route::get('/editForum', [adminController::class, 'editForum']);
 // Route::get('/jajal', [adminController::class, 'jajalan']);
 
 //route memanggil data students ke tampilan admin
-Route::get('/jajal', [StudentController::class, 'getStudents']);
-Route::get('/datasiswa', [adminController::class, 'getStudents']);
+// Route::get('/jajal', [StudentController::class, 'getStudents']);
+// Route::resource('datasiswa', [StudentController::class]);
+
+// Route::resource('datasiswa', App\Http\Controllers\StudentController::class);
+
+Route::get('/datasiswa', 'App\Http\Controllers\StudentController@index');
+// Route::get('/edit-siswa/{id}', 'App\Http\Controllers\StudentController@edit');
+
+Route::get('/edit-siswa/', 'App\Http\Controllers\StudentController@edit');
+Route::get('/edit-siswa/{id}', 'App\Http\Controllers\StudentController@edit');

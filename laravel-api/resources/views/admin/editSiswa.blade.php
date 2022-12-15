@@ -90,6 +90,7 @@
             </ul>
         </div>
     </aside>
+</div>
     <!-- @yield('content') -->
     <!-- end sidenav -->
     <!-- end sidebar -->
@@ -113,19 +114,17 @@
                                 <li class="text-sm pl-2 capitalize leading-normal text-black before:float-left before:pr-2 before:text-black before:content-['/']" aria-current="page">Data Siswa</li>
                             </ol>
                             <h6 class="mb-0 font-bold text-black capitalize">Edit Siswa</h6>
-                            <form>
+                            <form action="" method="POST">
                                 <div class="mb-6 mt-5">
                                     <label for="namasiswa" class="block mb-2 text-sm font-bold text-gray-700">NAMA SISWA</label>
-                                    <input type="namasiswa" id="namasiswa" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 placeholder=" nama siswa" required>
+                                    <input type="namasiswa" id="namasiswa" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2" placeholder="nama siswa" required>
                                 </div>
                                 <div class="mb-6 -mt-2">
                                     <label for="forum" class="block mb-2 text-sm font-bold text-gray-700">FORUM</label>
-                                    <input type="forum" id="forum" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 placeholder=" nama siswa" required>
+                                    <input type="forum" id="forum" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 placeholder="nama siswa" required>
                                 </div>
                                 <div class="mb-6 -mt-2">
                                     <label for="tanggalmasuk" class="block mb-2 text-sm font-bold text-gray-700">TANGGAL MASUK</label>
-                                    <!-- <input type="text" id="datepicker" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1 placeholder=" nama siswa" required>
-                                     -->
                                     <div class="relative">
                                         <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                                             <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -139,7 +138,6 @@
                                             });
                                         </script>
                                     </div>
-
                                 </div>
                                 <button type="submit" class="inline-flex items-center mt-2 px-5 py-2 mb-6 text-sm font-semibold text-center text-white bg-red-500 rounded-lg hover:bg-red-300">
                                     Edit Data

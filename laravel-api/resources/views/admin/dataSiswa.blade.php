@@ -145,7 +145,7 @@
                                                 <!-- <a href="/editsiswa" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
                                                 <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a> -->
 
-                                                <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                <a href="{{ url('edit-siswa',+$students->id) }}" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
                                                     <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
                                                     <span class="sr-only">Icon description</span>
                                                 </a>
@@ -162,6 +162,7 @@
                     </div>
                 </div>
             </div>
+            
             <!-- pop up hapus postingan -->
             <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-id">
                 <div class="relative w-auto my-6 mx-auto max-w-3xl">
