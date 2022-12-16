@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Forum;
+use App\Models\MD\Forum;
 use Illuminate\Http\Request;
 
 class ForumController extends Controller
@@ -12,7 +12,7 @@ class ForumController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function getForums($id = null)
+    public function index($id = null)
     {
         if (empty($id)) {
             $forums = Forum::get();
@@ -21,62 +21,20 @@ class ForumController extends Controller
             $forums = Forum::find($id);
             return response()->json(["forums" => $forums]);
         }
-
-        // $forums = Forum::get();
-        // return response()->json(["forums" => $forums]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function create(Request $request, $id)
     {
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Forum  $forum
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Forum $forum)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Forum  $forum
-     * @return \Illuminate\Http\Response
-     */
     public function edit(Forum $forum)
     {
         //
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Forum  $forum
-     * @return \Illuminate\Http\Response
-     */
-    public function updateForums(Request $request, $id)
+    public function update(Request $request, $id)
     {
         if ($request->isMethod('put')) {
             $forums = $request->input();
@@ -106,12 +64,6 @@ class ForumController extends Controller
         }
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Forum  $forum
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
         Forum::where('id', $id)->delete();
