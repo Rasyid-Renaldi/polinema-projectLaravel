@@ -112,8 +112,9 @@ class ForumController extends Controller
      * @param  \App\Models\Forum  $forum
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Forum $forum)
+    public function destroy($id)
     {
-        //
+        Forum::where('id', $id)->delete();
+        return response()->json(['message' => 'Topics Deleted!!'], 202);
     }
 }

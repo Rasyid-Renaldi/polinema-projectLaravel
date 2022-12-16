@@ -30,4 +30,10 @@ class StudentController extends Controller
             return response()->json(['message' => "Updated successfully!"], 202);
         }
     }
+
+    public function delete($id)
+    {
+        Student::where('id', $id)->delete();
+        return response()->json(['message' => 'Student Deleted!!'], 202);
+    }
 }

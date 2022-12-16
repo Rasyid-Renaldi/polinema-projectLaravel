@@ -26,6 +26,8 @@ Route::namespace('App\Http\Controllers')->group(function () {
 
     // PUT API - Buat update detail Data Siswa
     Route::put('update-students/{id?}', 'StudentController@updateStudents');
+
+    Route::delete('delete-students/{id?}', 'StudentController@delete');
 });
 
 // ROUTE FORUM => MANAJER DASHBOARD
@@ -35,4 +37,6 @@ Route::namespace('App\Http\Controllers')->group(function () {
 
     // PUT API - Buat update detail Forum
     Route::put('update-forums/{id?}', 'ForumController@updateForums');
+
+    Route::delete('delete-forums/{id?}', 'ForumController@destroy');
 });
