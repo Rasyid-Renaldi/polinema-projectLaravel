@@ -19,6 +19,15 @@ module.exports = {
         card: '#414346',
         card1: '#4E4F50',
         hovering: '#8a8a8a',
+      },
+      Keyframe: {
+        "fade-in": {
+          '0%': { opacity: '0%' },
+          '100%': { opacity: '100%' },
+        }
+      },
+      animation: {
+        "fade-in": 'fade-in 0.5s ease-in-out',
       }
     },
     fontFamily: {

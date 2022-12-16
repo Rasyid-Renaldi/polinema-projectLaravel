@@ -1,34 +1,87 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Models\Student;
 use Illuminate\Http\Request;
+use App\Models\Student;
 
 class StudentController extends Controller
 {
-    public function getStudents($id = null)
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
     {
-        if (empty($id)) {
-            $students = Student::get();
-            return response()->json(["students" => $students]);
-        } else {
-            $students = Student::find($id);
-            return response()->json(["students" => $students]);
-        }
-
-        // $students = Student::get();
-        // return response()->json(["students" => $students]);
-        // return $students;
+        $students = Student::get();
+        return view('admin.dataSiswa', compact('students'));
     }
 
-    public function updateStudents(Request $request, $id)
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
     {
-        if ($request->isMethod('put')) {
-            $students = $request->input();
-            Student::where('id', $id)->update(['name' => $students['name'], 'email' => $students['email'], 'status' => $students['status']]);
-            return response()->json(['message' => "Updated successfully!"], 202);
-        }
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        $students = Student::findorfail($id);
+        return view('admin.edit-siswa', compact('students'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
     }
 
     public function delete($id)

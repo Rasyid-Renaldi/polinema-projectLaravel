@@ -22,7 +22,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 // ROUTE DATA SISWA => MANAJER DASHBOARD
 Route::namespace('App\Http\Controllers')->group(function () {
     // GET API - Buat menampilkan Data Siswa baik berupa Array maupun berdasar id
-    Route::get('students/{id?}', 'StudentController@getStudents');
+    Route::get('students/{id?}', 'StudentController@index');
 
     // PUT API - Buat update detail Data Siswa
     Route::put('update-students/{id?}', 'StudentController@updateStudents');
