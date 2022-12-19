@@ -24,9 +24,12 @@ Route::namespace('App\Http\Controllers')->group(function () {
     Route::get('students/{id?}', 'StudentController@index');
 
     // PUT API - Buat update detail Data Siswa
-    Route::put('update-students/{id?}', 'StudentsController@updateStudents');
+    Route::put('update-students/{id?}', 'StudentController@update');
 
-    Route::delete('delete-students/{id?}', 'StudentsController@delete');
+    // POST API - Buat test add student
+    Route::post('add-students', 'StudentController@store');
+
+    Route::delete('delete-students/{id?}', 'StudentController@delete');
 });
 
 // ROUTE FORUM => MANAJER DASHBOARD
