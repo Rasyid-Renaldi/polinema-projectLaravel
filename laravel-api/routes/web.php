@@ -4,6 +4,7 @@ use App\Http\Controllers\adminController;
 use App\Http\Controllers\EnduserController;
 use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Frontend\FrontendStudentsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,8 +58,14 @@ Route::get('/editForum', [adminController::class, 'editForum']);
 
 // Route::resource('datasiswa', App\Http\Controllers\StudentController::class);
 
-Route::get('/datasiswa', 'App\Http\Controllers\StudentController@index');
+
 // Route::get('/edit-siswa/{id}', 'App\Http\Controllers\StudentController@edit');
 
 Route::get('/edit-siswa/', 'App\Http\Controllers\StudentController@edit');
 Route::get('/edit-siswa/{id}', 'App\Http\Controllers\StudentController@edit');
+
+
+//route baru baru baru baru
+Route::get('getStudent', [FrontendStudentsController::class, 'index']);
+Route::get('datasiswa', [FrontendStudentsController::class, 'getSiswa']);
+//route

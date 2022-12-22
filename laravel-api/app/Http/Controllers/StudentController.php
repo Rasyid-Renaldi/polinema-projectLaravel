@@ -12,7 +12,7 @@ class StudentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id = null)
+    public function indexs($id = null)
     {
         if (empty($id)) {
             $students = Student::get();
@@ -21,6 +21,12 @@ class StudentController extends Controller
             $students = Student::find($id);
             return response()->json(["students" => $students]);
         }
+    }
+
+    public function index()
+    {
+        $students = Student::all();
+        return response()->json($students);
     }
 
     /**

@@ -19,6 +19,10 @@
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <!-- Main Styling -->
     <link href="./assets/css/argon-dashboard-tailwind.css?v=1.0.1" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body class="m-0 font-sans text-base antialiased font-normal dark:bg-slate-900 leading-default bg-gray-50 text-slate-500">
@@ -119,33 +123,25 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach($students as $students)
-                                        <tr>
+                                        <!-- <tr>
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
                                                 <div class="flex px-2 py-1">
-                                                    <div>
-                                                        <img src="../assets/img/bibrieziq.jpg" class="inline-flex items-center justify-center mr-4 text-sm text-white transition-all duration-200 ease-in-out h-9 w-9 rounded-xl" alt="user1" />
-                                                    </div>
                                                     <div class="flex flex-col justify-center">
-                                                        <h6 class="mb-0 text-sm leading-normal text-black opacity-80">{{ $students->name }}</h6>
-
+                                                        <h6 class="mb-0 text-sm leading-normal text-black opacity-80"></h6>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <p class="mb-0 text-xs leading-tight dark:text-white dark:opacity-80 text-black">{{ $students->email }}</p>
+                                                <p class="mb-0 text-xs leading-tight dark:text-white dark:opacity-80 text-black"></p>
                                             </td>
                                             <td class="p-2 text-sm leading-normal text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <span class="bg-gradient-to-tl from-emerald-500 to-teal-400 px-2.5 text-xs rounded-1.8 py-1.4 inline-block whitespace-nowrap text-center align-baseline font-bold uppercase leading-none text-white">{{ $students->status }}</span>
+                                                <span class="mb-0 text-xs leading-tight dark:text-white dark:opacity-80 text-black"></span>
                                             </td>
                                             <td class="p-2 text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">{{ $students->created_at }}</span>
+                                                <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400"></span>
                                             </td>
                                             <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                                <!-- <a href="/editsiswa" class="text-xs bg-yellow-500 hover:bg-yellow-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">EDIT </a>
-                                                <a href="javascript:;" class="text-xs ml-1 bg-red-500 hover:bg-red-400 font-semibold leading-tight px-3 py-1.5 rounded-lg text-white">HAPUS </a> -->
-
-                                                <a href="{{ url('edit-siswa',+$students->id) }}" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
+                                                <a href="/editsiswa" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2 text-center inline-flex items-center mr-2 -ml-1">
                                                     <i class="fa fa-solid fa-pen top-3.5 text-white"></i>
                                                     <span class="sr-only">Icon description</span>
                                                 </a>
@@ -153,16 +149,44 @@
                                                     <i class=" fa fa-solid fa-trash top-3.5 text-white"></i>
                                                 </button>
                                             </td>
-                                        </tr>
-                                        @endforeach
+                                        </tr> -->
                                     </tbody>
+                                    <script>
+                                        $(document).ready(function() {
+                                            tampilData();
+                                        });
+
+                                        function tampilData() {
+                                            $('tbody').html('');
+                                            $.ajax({
+                                                url: 'http://localhost:8000/api/students',
+                                                type: 'GET',
+                                                dataType: 'json',
+                                                success: function(data) {
+                                                    $.each(data, function(key, values) {
+                                                        console.log(data[key].name);
+                                                        id = data[key].id;
+                                                        name = data[key].name;
+                                                        email = data[key].email;
+                                                        status = data[key].status;
+                                                        $('tbody').append('<tr>\
+                                                            <td>' + id + '</td>\
+                                                            <td>' + name + '</td>\
+                                                            <td>' + email + '</td>\
+                                                            <td>' + status + '</td>\
+                                                            </tr>');
+                                                    });
+                                                }
+                                            });
+                                        }
+                                    </script>
                                 </table>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <!-- pop up hapus postingan -->
             <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-id">
                 <div class="relative w-auto my-6 mx-auto max-w-3xl">
