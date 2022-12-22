@@ -12,9 +12,15 @@ class ReplyController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id = null)
     {
-        //
+        if (empty($id)) {
+            $replies = Reply::get();
+            return response()->json(["replies" => $replies]);
+        } else {
+            $replies = Reply::find($id);
+            return response()->json(["replies" => $replies]);
+        }
     }
 
     /**
@@ -25,7 +31,14 @@ class ReplyController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if ($request->isMethod('post')) {
+            $replyData = $request->input();
+            $replies = new Reply;
+            $replies->name = $replyData['desc'];
+            $replies->email = $replyData['image'];
+            $replies->save();
+            return response()->json(['message' => 'Reply successfully!!']);
+        }
     }
 
     /**
@@ -46,9 +59,13 @@ class ReplyController extends Controller
      * @param  \App\Models\Reply  $reply
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Reply $reply)
+    public function update(Request $request, $id)
     {
-        //
+        if ($request->isMethod('put')) {
+            $replies = $request->input();
+            Reply::where('id', $id)->update(['desc' => $replies['desc']]);
+            return response()->json(['message' => "Updated replies successfully!"], 202);
+        }
     }
 
     /**

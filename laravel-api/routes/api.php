@@ -40,7 +40,7 @@ Route::namespace('App\Http\Controllers')->group(function () {
     Route::get('replies/{id?}', 'ReplyController@index');
 
     // POST API - Buat melakukan reply topik diskusi forum
-    Route::post('reply-topics/{id?}, ReplyController@create');
+    Route::post('reply-topics/{id?}, ReplyController@store');
 
     // PUT API - Buat edit reply 
     Route::put('update-topics/{id?}', 'ReplyController@update');
