@@ -28,6 +28,7 @@ Route::get('/admin', [adminController::class, 'index']);
 Route::get('/forum', [EnduserController::class, 'forumUser']);
 Route::get('/contact', [EnduserController::class, 'contact']);
 Route::get('/support', [EnduserController::class, 'support']);
+Route::get('/formlaporan', [EnduserController::class, 'formlaporan']);
 // Route::get('/coba', [adminController::class, 'coba']);
 
 // Route::get('/coba', [adminController::class, 'coba']);

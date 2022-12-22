@@ -17,4 +17,8 @@ class EndUserController extends Controller
     public function support(){
         return view ('layouts.support');
     }
+    public function formlaporan(){
+        return view ('layouts.form_laporan');
+    }
+
 }
