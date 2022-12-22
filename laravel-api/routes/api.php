@@ -10,7 +10,8 @@ use Illuminate\Support\Facades\Route;
 
 // ROUTE DATA SISWA => MANAJER DASHBOARD
 Route::namespace('App\Http\Controllers')->group(function () {
-    // GET API - Buat menampilkan Data Siswa baik berupa Array maupun berdasar id
+    // GET API - Buat menampilkan Data Siswa baik berupa Array maupun berdasar id 
+    //[StudentController::class, 'index']
     Route::get('students/{id?}', 'StudentController@index');
 
     // PUT API - Buat update detail Data Siswa

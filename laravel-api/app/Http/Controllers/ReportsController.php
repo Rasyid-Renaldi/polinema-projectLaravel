@@ -12,9 +12,15 @@ class ReportsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id = null)
     {
-        //
+        if (empty($id)) {
+            $reports = Reports::get();
+            return response()->json(["reports" => $reports]);
+        } else {
+            $reports = Reports::find($id);
+            return response()->json(["reports" => $reports]);
+        }
     }
 
     /**
@@ -25,7 +31,18 @@ class ReportsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if ($request->isMethod('post')) {
+            $dataReports = $request->input();
+            $reports = new Reports;
+            $reports->name = $dataReports['name'];
+            $reports->timestamps = $dataReports['timestamps'];
+            $reports->report = $dataReports['report'];
+            $reports->desc = $dataReports['desc'];
+            $reports->image = $dataReports['image'];
+            $reports->reply = $dataReports['reply'];
+            $reports->save();
+            return response()->json(['message' => 'Reports are added!!']);
+        }
     }
 
     /**
@@ -46,11 +63,21 @@ class ReportsController extends Controller
      * @param  \App\Models\Reports  $reports
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Reports $reports)
+    public function update(Request $request, $id)
     {
-        //
+        if ($request->isMethod('put')) {
+            $reports = $request->input();
+            Reports::where('id', $id)->update([
+                'name' => $reports['name'],
+                'timestamps' => $reports['timestamps'],
+                'report' => $reports['report'],
+                'desc' => $reports['desc'],
+                'image' => $reports['image'],
+                'reply' => $reports['reply']
+            ]);
+            return response()->json(['message' => "Updated successfully!"], 202);
+        }
     }
-
     /**
      * Remove the specified resource from storage.
      *
