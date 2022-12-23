@@ -65,7 +65,9 @@ Route::get('/edit-siswa/', 'App\Http\Controllers\StudentController@edit');
 Route::get('/edit-siswa/{id}', 'App\Http\Controllers\StudentController@edit');
 
 
-//route baru baru baru baru
-Route::get('getStudent', [FrontendStudentsController::class, 'index']);
+//route baru baru baru baru 
 Route::get('datasiswa', [FrontendStudentsController::class, 'getSiswa']);
+Route::get('editsiswa/{id}', [FrontendStudentsController::class, 'editSiswa']);
+
+Route::get('/cobaedit', [FrontendStudentsController::class, 'editmencoba']);
 //route

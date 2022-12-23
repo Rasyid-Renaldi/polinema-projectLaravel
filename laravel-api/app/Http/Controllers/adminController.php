@@ -79,4 +79,7 @@ class adminController extends Controller
         return view('admin.dataSiswa', compact('students'));
         // return $students;
     }
+
+
+    
 }
