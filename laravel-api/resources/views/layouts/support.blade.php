@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,85 +8,74 @@
     @vite('resources/css/app.css')
     <title>Support</title>
 </head>
+
 <body>
-        {{--  Navbar Start  --}}
-        <div class="flex flex-wrap place-items-center">
-            <section class="relative mx-auto">
-                <nav class="flex justify-between bg-transparent text-white w-screen">
-                    <div class="px-5 xl:px-12 py-6 flex w-full items-center">
-                        <a href="" class="">
-                            <img class="w-36 h-7"
-                                src="https://www.mejakita.com/images/logo-new.png?imwidth=256 "alt="">
-                        </a>
-                        {{--  <!-- Nav Links -->  --}}
-                        <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
-                            <li><a class="hover:text-primary text-gray-900" href="/forum">Beranda</a></li>
-                            <li><a class="hover:text-primary text-gray-900" href="/contact">Contact & Teams</a></li>
-                            <li><a class="hover:text-primary text-gray-300" href="#">Support</a></li>
-                        </ul>
-                        {{--  <!-- Header Icons -->  --}}
-                        <div class="hidden xl:flex items-center space-x-5">
-                            <a class="hover:text-blue-400" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-black hover:stroke-white"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                                </svg>
+    {{--  Navbar Start  --}}
+    @include('layouts/navbar')
+    @yield('navbar')
+    {{--  Navbar End  --}}
+
+    {{--  Hero Section Start  --}}
+
+    <section class="w-screen">
+        <div class="flex flex-nowrap bg-secondary1">
+
+            {{--  Sidebar Start  --}}
+            @include('layouts/sidebar_support')
+            @yield('sidebar')
+            {{--  Sidebar End  --}}
+
+            {{--  Content Start  --}}
+
+            <div class="block bg-secondary1 px-8 py-8 w-full">
+                <h1 class="text-white text-3xl font-semibold mb-2">Apa yang bisa kami bantu?</h1>
+                <label class="mb-14">
+                    <input type="text" name="text"
+                        class="mt-1 px-3 py-2 text-white h-16 bg-slate-900 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-1/2 rounded-md sm:text-sm focus:ring-1"
+                        placeholder="Cari artikel bantuan" />
+                </label>
+                <div class="container flex flex-nowrap gap-8 mt-6">
+                    <div class="flex flex-nowrap justify-start mt-8 ">
+                        <div class="rounded-lg shadow-lg bg-white w-64 ">
+                            <a href="#!">
+                                <img class="rounded-md w-full"
+                                    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YWNjb3VudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="" />
                             </a>
-                            <a class="flex items-center hover:text-gray-200" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-black hover:stroke-white"
-                                    fill="none" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                                </svg>
-                                <span class="flex absolute -mt-5 ml-4">
-                                    <span
-                                        class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-red-400 opacity-75"></span>
-                                    <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500">
-                                    </span>
-                                </span>
-                            </a>
-                            <!-- Sign In / Register      -->
-                            <a class="flex items-center hover:text-gray-200" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-black hover:stroke-white"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </a>
-    
+                            <div class="p-6">
+                                <h5 class="text-gray-900 text-xl font-medium mb-2">Halaman</h5>
+                                <p class="text-gray-700 text-sm mb-4">
+                                    Some quick example text to build on the card title and make up the bulk of the cards
+                                    content.
+                                </p>
+                                <button type="button"
+                                    class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
+                            </div>
                         </div>
                     </div>
-                    {{--  <!-- Responsive navbar -->  --}}
-                    <a class="xl:hidden flex mr-6 items-center" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                        <span class="flex absolute -mt-5 ml-4">
-                            <span
-                                class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
-                            </span>
-                        </span>
-                    </a>
-                    <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </a>
-                </nav>
-            </section>
-        </div>
-        {{--  Navbar End  --}}
-
-
-
-
+                    <div class="flex flex-nowrap justify-start mt-8">
+                        <div class="rounded-lg shadow-lg bg-white w-64 ">
+                            <a href="#!">
+                                <img class="rounded-md w-full"
+                                    src="https://images.unsplash.com/photo-1512314889357-e157c22f938d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bm90ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="" />
+                            </a>
+                            <div class="p-6 relative">
+                                <h5 class="text-gray-900 text-xl font-medium mb-2">Form Laporan</h5>
+                                <p class="text-gray-700 text-sm mb-4">
+                                    Laporkan kepada help-desk apabila terkait bug platform & etc, maka akan ditindak lanjuti
+                                </p>
+                                <a href="/formlaporan" type="button"
+                                    class="static inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{--  Content End  --}}
+    </section>
 
 
 </body>
+
 </html>
