@@ -38,14 +38,14 @@
 </head>
 
 <body class="m-0 font-sans text-base antialiased font-normal leading-default bg-gray-50 text-slate-500">
-    <div class="absolute w-full bg-red-500 dark:hidden min-h-75"></div>
+    <div class="absolute w-full bg-red-500 min-h-75"></div>
     <!-- sidebar  -->
     <!-- sidenav  -->
     <aside class="fixed inset-y-0 flex-wrap items-center justify-between block w-full p-0 my-4 overflow-y-auto antialiased transition-transform duration-200 -translate-x-full bg-primary border-0 shadow-xl dark:shadow-none dark:bg-slate-850 max-w-64 ease-nav-brand z-990 xl:ml-6 rounded-2xl xl:left-0 xl:translate-x-0" aria-expanded="false">
         <div class="h-19">
             <i class="absolute top-0 right-0 p-4 opacity-50 cursor-pointer fas fa-times dark:text-white text-slate-400 xl:hidden" sidenav-close></i>
             <a class="block px-8 py-6 m-0 text-sm whitespace-nowrap" href="">
-                <img src="assets/img/newimages/logomejakita.png" class="inline h-full max-w-full transition-all duration-200 ease-nav-brand max-h-8" alt="main_logo" />
+                <img src="/assets/img/newimages/logomejakita.png" class="inline h-full max-w-full transition-all duration-200 ease-nav-brand max-h-8" alt="main_logo" />
             </a>
         </div>
         <li class="w-full mt-4">
@@ -112,9 +112,8 @@
             <!-- table -->
             <div class="flex flex-wrap -mx-3">
                 <div class="flex-none w-full max-w-full px-3">
-                    <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
+                    <div class="relative mt-4 ml-4 flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-xl dark:bg-slate-850 rounded-2xl bg-clip-border">
                         <div class="p-6 pb-0 mb-0 border-b-0 border-b-solid rounded-t-2xl border-b-transparent">
-
                             <!-- breadcrumb -->
                             <ol class="flex flex-wrap pt-1 mr-12 bg-transparent rounded-lg sm:mr-16">
                                 <li class="text-sm leading-normal">
@@ -129,7 +128,7 @@
                                     <input type="namasiswa" id="namasiswa" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2" placeholder="nama siswa" required>
                                 </div>
                                 <div class="mb-6 -mt-2">
-                                    <label for="forum" class="block mb-2 text-sm font-bold text-gray-700">GMAIL</label>
+                                    <label for="forum" class="block mb-2 text-sm font-bold text-gray-700">EMAIL</label>
                                     <input type="forum" id="forum" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 placeholder=" nama siswa" required>
                                 </div>
                                 <div class="mb-6 -mt-2">
