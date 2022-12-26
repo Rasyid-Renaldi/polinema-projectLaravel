@@ -45,7 +45,7 @@
                 </div>
 
                 <!--Body-->
-                
+            
                 <form action="" method="POST">
                     <div class="mb-6 mt-5">
                         <label for="namasiswa" class="block mb-2 text-sm font-bold text-gray-700">NAMA SISWA</label>
@@ -103,7 +103,7 @@
 
 
         function toggleModal() {
-            const body = document.querySelector('body')
+            // const body = document.querySelector('body')
             const modal = document.querySelector('.modal')
             modal.classList.toggle('opacity-0')
             modal.classList.toggle('pointer-events-none')

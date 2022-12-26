@@ -35,7 +35,6 @@ Route::get('/formlaporan', [EnduserController::class, 'formlaporan']);
 
 
 //CRUD
-Route::get('/editsiswa', [adminController::class, 'editSiswa']);
 Route::get('/popup', [adminController::class, 'popupTest']);
 
 //routes support page
@@ -66,9 +65,7 @@ Route::get('/edit-siswa/', 'App\Http\Controllers\StudentController@edit');
 Route::get('/edit-siswa/{id}', 'App\Http\Controllers\StudentController@edit');
 
 
-//route baru baru baru baru 
-Route::get('datasiswa', [FrontendStudentsController::class, 'getSiswa']);
-Route::get('editsiswa/{id}', [FrontendStudentsController::class, 'editSiswa']);
-
-Route::get('/cobaedit', [FrontendStudentsController::class, 'editmencoba']);
-//route
+//frontend route data siswa page
+Route::get('datasiswa', [FrontendStudentsController::class, 'index']);
+Route::get('/edit', [FrontendStudentsController::class, 'editSiswa']);
+Route::get('/edit/{id}', [FrontendStudentsController::class, 'editID']);

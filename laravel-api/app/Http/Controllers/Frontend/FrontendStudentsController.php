@@ -12,25 +12,26 @@ class FrontendStudentsController extends Controller
     public function index()
     {
         $students = Student::all();
-        return view('dataS.DataStudents', compact('students'));
-    }
-
-    public function getSiswa()
-    {
-        $students = Student::all();
         return view('admin.dataSiswa', compact('students'));
     }
 
-    public function editSiswa(Request $request, $id)
+
+
+    public function editSiswa()
+    {
+        // $students = Student::find($id);        
+        // return view('admin.editSiswa')->with([
+        //     'students' => $students
+        // ]);
+        return view('admin.editSiswa');
+    }
+
+    public function editID($id)
     {
         $students = Student::find($id);        
         return view('admin.editSiswa')->with([
             'students' => $students
         ]);
-    }
-
-    public function editmencoba()
-    {
-        return view('dataS.editPop');
+        return view('admin.editSiswa');
     }
 }
